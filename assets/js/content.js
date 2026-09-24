@@ -145,14 +145,6 @@ window.AT_CONTENT = {
         s4: { title: "نافس وابنِ ملفك", text: "مسابقات CTF ومشاريع حقيقية تضيفها إلى سيرتك الذاتية." },
         s5: { title: "انطلق مهنياً", text: `<span data-proposal>شهادة إتمام</span>، وتحضير لشهادة دولية، ودعم في طريقك إلى أول وظيفة.` }
       },
-      stories: {
-        title: "قصص المتدربين",
-        sample: "مثال توضيحي",
-        note: "هذه أمثلة للتصميم فقط، وستُستبدل بآراء حقيقية من المتدربين.",
-        q1: { text: "لأول مرة أفهم كيف يحدث الاختراق فعلاً، لأنني نفّذته بنفسي داخل المختبر بدلاً من أن أحفظه.", who: "طالبة جامعية", track: "مسار SOC" },
-        q2: { text: "بدأت من الصفر بدون أي خلفية تقنية، وكان المسار متدرّجاً بوضوح من أول يوم.", who: "مغيّر مسار", track: "الأساسيات" },
-        q3: { text: "مسابقات CTF كانت أكثر شيء حمّسني. صرنا فريقاً، وتعلّمنا من بعضنا.", who: "طالب مدرسة", track: "مستكشفو السايبر" }
-      },
       faq: {
         title: "الأسئلة الشائعة",
         lead: "لم تجد إجابتك؟ اكتب سؤالك في خانة الملاحظات عند التسجيل.",
@@ -359,14 +351,6 @@ window.AT_CONTENT = {
         s3: { title: "Learn by doing", text: `<span data-proposal>Instructor-led sessions</span> with hands-on labs at every step.` },
         s4: { title: "Compete & build your portfolio", text: "CTF competitions and real projects to add to your CV." },
         s5: { title: "Launch your career", text: `<span data-proposal>A completion certificate</span>, international certification prep, and support on the way to your first job.` }
-      },
-      stories: {
-        title: "Learner stories",
-        sample: "Illustrative sample",
-        note: "These are design samples only and will be replaced with real learner reviews.",
-        q1: { text: "For the first time I really understood how an attack happens, because I carried it out myself in the lab instead of memorizing it.", who: "University student", track: "SOC track" },
-        q2: { text: "I started from zero with no technical background, and the path built up clearly from day one.", who: "Career switcher", track: "Foundations" },
-        q3: { text: "The CTF competitions were the most exciting part. We became a team and learned from each other.", who: "School student", track: "Cyber Explorers" }
       },
       faq: {
         title: "Frequently asked questions",

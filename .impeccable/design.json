@@ -428,7 +428,7 @@
       {
         "name": "float",
         "value": "0 24px 60px -24px rgba(0,0,0,.75), 0 2px 8px rgba(0,0,0,.25)",
-        "purpose": "Floating objects only: terminal, flag toast, register form, draft note."
+        "purpose": "Floating objects only: terminal, flag toast, register form."
       },
       {
         "name": "coral-lift",

@@ -184,7 +184,7 @@ A cool navy-and-slate system lit by a single coral voice, with a quiet five-hue 
 ### Secondary
 - **Track palette** (track-amber, track-steel, track-blue, track-violet, track-green, plus brand for Red Team): one hue per course track: Juniors amber, Foundations steel, Red Team coral, Blue Team blue, Cloud violet, Certification green. A track hue appears as a 14% chip wash, a 6px dot, a corner glow at 18%, the line-art stroke, and the hover border. It never fills a button.
 - **Lab Green** (track-green) also means success and "captured": the terminal's OK lines and flag highlight, the live status pill, tick marks, the journey's goal step, and the form success icon.
-- **Draft Amber** (track-amber) also means "proposal": draft-mode underlines, the draft badge, and sample-quote tags. The terminal uses it for hits.
+- **Draft Amber** (track-amber) also means "proposal": draft-mode underlines. The terminal uses it for hits.
 
 ### Neutral
 - **Night Navy** (ground): the page ground, and the base the hero centre-light rises from.
@@ -241,10 +241,10 @@ Grids are explicit and reflow in steps: the audience doors are 4 columns, then 2
 
 ## Elevation & Depth
 
-Depth is tonal first. Surfaces climb a navy ramp (ground, raised ground, panel, panel-2, panel-3) and are edged with hairlines, not shadows. Light, not shadow, gives the page its volume: a radial centre-light in the hero and register sections, and a 28px dotted grid masked to fade downward. Real shadows are reserved for things that float above the page (the lab window, the flag toast, the register form, the draft note), and for coloured hover lift on primary buttons, doors and course cards.
+Depth is tonal first. Surfaces climb a navy ramp (ground, raised ground, panel, panel-2, panel-3) and are edged with hairlines, not shadows. Light, not shadow, gives the page its volume: a radial centre-light in the hero and register sections, and a 28px dotted grid masked to fade downward. Real shadows are reserved for things that float above the page (the lab window, the flag toast, the register form), and for coloured hover lift on primary buttons, doors and course cards.
 
 ### Shadow Vocabulary
-- **Float** (`box-shadow: 0 24px 60px -24px rgba(0,0,0,.75), 0 2px 8px rgba(0,0,0,.25)`): floating objects only: the terminal window, the flag toast, the register form panel, the draft note.
+- **Float** (`box-shadow: 0 24px 60px -24px rgba(0,0,0,.75), 0 2px 8px rgba(0,0,0,.25)`): floating objects only: the terminal window, the flag toast, the register form panel.
 - **Coral lift** (`box-shadow: 0 10px 26px -12px rgba(239,64,80,.7), inset 0 1px 0 rgba(255,255,255,.16)`): primary buttons at rest; on hover it deepens to `0 16px 34px -14px rgba(239,64,80,.85)` with a 1px rise.
 - **Tinted hover glow** (`box-shadow: 0 26px 50px -30px <hue>`): doors (coral) and course cards (their track hue at 75%), paired with a 3-4px rise.
 - **Focus halo** (`box-shadow: 0 0 0 4px rgba(239,64,80,.18)`): focused inputs.
@@ -314,7 +314,7 @@ A 14px window on Terminal Black with a line-2 border and the float shadow, plus 
 Numbered 48px tiles (12px radius) joined by a 2px rail that fades from coral to green. The first step is filled Deep Coral, and the goal step is green with a flag icon. Horizontal on desktop, vertical below 980px.
 
 ### Draft Mode (system mechanism)
-`html[data-draft]` is the honesty switch. Every `[data-proposal]` value (ages, hours, labs, certification mappings, policies, prices) gets a 2px amber dotted underline offset 0.34em, `cursor: help` and a tooltip. Sample-quote sections (`[data-samples]`) render only in draft mode, with dashed borders and an amber "sample" tag. A dismissible amber-badged note explains the marks. It floats at the inline-end bottom on desktop and becomes an in-flow strip on mobile, so it never covers content. Removing the attribute is the only way proposal styling disappears.
+`html[data-draft]` is the honesty switch. Every `[data-proposal]` value (ages, hours, labs, certification mappings, policies, prices) gets a 2px amber dotted underline offset 0.34em, `cursor: help` and a tooltip. Removing the attribute is the only way proposal styling disappears.
 
 ## Do's and Don'ts
 
