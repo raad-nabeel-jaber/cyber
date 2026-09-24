@@ -1,0 +1,11 @@
+# Impeccable tooling scratch (screenshots, logs, local config)
+.impeccable/review/
+.impeccable/questions/
+.impeccable/build/
+.impeccable/*.local.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

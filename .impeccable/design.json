@@ -1,0 +1,685 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-24T12:27:17+00:00",
+  "title": "Design System: apptrainers Cyber Academy",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Night Navy",
+        "canonical": "#0B111C",
+        "tonalRamp": [
+          "#060B16",
+          "#1E2531",
+          "#3B4250",
+          "#5A6270",
+          "#7A8392",
+          "#9DA5B5",
+          "#C0CADA",
+          "#E6EFFE"
+        ]
+      },
+      "ground-raised": {
+        "role": "neutral",
+        "displayName": "Raised Navy",
+        "canonical": "#0E1523",
+        "tonalRamp": [
+          "#050B18",
+          "#1D2534",
+          "#3A4253",
+          "#586173",
+          "#798395",
+          "#9BA5B9",
+          "#BFCADE",
+          "#E7EFFE"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel Navy",
+        "canonical": "#131C2C",
+        "tonalRamp": [
+          "#040B19",
+          "#1C2536",
+          "#384254",
+          "#576275",
+          "#778397",
+          "#99A6BB",
+          "#BDCAE0",
+          "#E6EFFE"
+        ]
+      },
+      "panel-2": {
+        "role": "neutral",
+        "displayName": "Panel Navy 2",
+        "canonical": "#192437",
+        "tonalRamp": [
+          "#030B1B",
+          "#1A2538",
+          "#364257",
+          "#556278",
+          "#75839A",
+          "#97A6BE",
+          "#BBCAE3",
+          "#E6EFFE"
+        ]
+      },
+      "panel-3": {
+        "role": "neutral",
+        "displayName": "Panel Navy 3",
+        "canonical": "#1F2B41",
+        "tonalRamp": [
+          "#030A1D",
+          "#19253A",
+          "#35425A",
+          "#54627B",
+          "#74839D",
+          "#96A6C1",
+          "#BACAE7",
+          "#E6EFFE"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Navy",
+        "canonical": "#0E1523",
+        "tonalRamp": [
+          "#050B18",
+          "#1D2534",
+          "#3A4253",
+          "#586173",
+          "#798395",
+          "#9BA5B9",
+          "#BFCADE",
+          "#E7EFFE"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#212D43",
+        "tonalRamp": [
+          "#030A1D",
+          "#19253A",
+          "#354259",
+          "#54627A",
+          "#74839D",
+          "#96A6C1",
+          "#BACAE6",
+          "#E6EFFE"
+        ]
+      },
+      "line-2": {
+        "role": "neutral",
+        "displayName": "Control Hairline",
+        "canonical": "#2C3A55",
+        "tonalRamp": [
+          "#020920",
+          "#18243E",
+          "#34425D",
+          "#52617F",
+          "#7283A2",
+          "#94A6C6",
+          "#B8CAEB",
+          "#E7EFFE"
+        ]
+      },
+      "line-3": {
+        "role": "neutral",
+        "displayName": "Emphasis Hairline",
+        "canonical": "#3A4B6B",
+        "tonalRamp": [
+          "#010923",
+          "#152441",
+          "#314261",
+          "#4F6183",
+          "#7083A6",
+          "#92A6CA",
+          "#B5CAF0",
+          "#E6EFFF"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#F3F6FB",
+        "tonalRamp": [
+          "#090B0E",
+          "#232529",
+          "#404246",
+          "#5F6166",
+          "#808287",
+          "#A2A5AA",
+          "#C6C9CE",
+          "#ECEFF4"
+        ]
+      },
+      "text-2": {
+        "role": "neutral",
+        "displayName": "Blue-Gray",
+        "canonical": "#AAB6CA",
+        "tonalRamp": [
+          "#040B18",
+          "#1C2535",
+          "#384253",
+          "#576274",
+          "#788396",
+          "#9AA6B9",
+          "#BECADE",
+          "#E6EFFE"
+        ]
+      },
+      "text-3": {
+        "role": "neutral",
+        "displayName": "Slate",
+        "canonical": "#8290A8",
+        "tonalRamp": [
+          "#030A1C",
+          "#1A2538",
+          "#364257",
+          "#556278",
+          "#75839B",
+          "#97A6BE",
+          "#BBCAE4",
+          "#E6EFFE"
+        ]
+      },
+      "placeholder": {
+        "role": "neutral",
+        "displayName": "Placeholder Slate",
+        "canonical": "#7B89A2",
+        "tonalRamp": [
+          "#030A1C",
+          "#1A2539",
+          "#364258",
+          "#556279",
+          "#75839C",
+          "#97A6C0",
+          "#BBCAE5",
+          "#E6EFFE"
+        ]
+      },
+      "brand": {
+        "role": "primary",
+        "displayName": "apptrainers Coral",
+        "canonical": "#EF4050",
+        "tonalRamp": [
+          "#1E0002",
+          "#4A050E",
+          "#7F021C",
+          "#B50B2D",
+          "#E53548",
+          "#FB7578",
+          "#FBB4B2",
+          "#FEE9E8"
+        ]
+      },
+      "brand-strong": {
+        "role": "primary",
+        "displayName": "Deep Coral",
+        "canonical": "#DC2E42",
+        "tonalRamp": [
+          "#1E0002",
+          "#4D000C",
+          "#7F051C",
+          "#B5102D",
+          "#E43748",
+          "#FA7678",
+          "#FFB2B0",
+          "#FEE9E8"
+        ],
+        "purpose": "Fills carrying white text (AA)."
+      },
+      "brand-hover": {
+        "role": "primary",
+        "displayName": "Pressed Coral",
+        "canonical": "#C92539",
+        "tonalRamp": [
+          "#1F0002",
+          "#4B030D",
+          "#7C0F1E",
+          "#B7032A",
+          "#E03F4B",
+          "#FC7476",
+          "#FCB3B1",
+          "#FFE8E7"
+        ]
+      },
+      "brand-text": {
+        "role": "primary",
+        "displayName": "Signal Pink",
+        "canonical": "#FF707C",
+        "tonalRamp": [
+          "#1E0003",
+          "#4C0011",
+          "#7E0523",
+          "#AE223B",
+          "#D64B5B",
+          "#FF707C",
+          "#FEB2B4",
+          "#FEE9E9"
+        ],
+        "purpose": "Small red text on dark."
+      },
+      "danger-text": {
+        "role": "error",
+        "displayName": "Error Pink",
+        "canonical": "#FF8A94",
+        "tonalRamp": [
+          "#1D0104",
+          "#4B0314",
+          "#7C0D28",
+          "#A23646",
+          "#C85966",
+          "#F07D87",
+          "#FCB3B7",
+          "#FFE8E9"
+        ]
+      },
+      "danger-line": {
+        "role": "error",
+        "displayName": "Error Line",
+        "canonical": "#FF5A6A",
+        "tonalRamp": [
+          "#1E0103",
+          "#4B0210",
+          "#7C0C22",
+          "#B21936",
+          "#E03C52",
+          "#FD727B",
+          "#FDB3B3",
+          "#FFE8E8"
+        ]
+      },
+      "track-blue": {
+        "role": "secondary",
+        "displayName": "Blue Team Sky",
+        "canonical": "#52B9FF",
+        "tonalRamp": [
+          "#000C19",
+          "#02283F",
+          "#09466A",
+          "#156799",
+          "#138ACD",
+          "#46AEF4",
+          "#98D1FC",
+          "#E0F1FF"
+        ]
+      },
+      "track-violet": {
+        "role": "secondary",
+        "displayName": "Cloud Violet",
+        "canonical": "#A495FF",
+        "tonalRamp": [
+          "#0D002B",
+          "#290067",
+          "#432B8B",
+          "#614DB0",
+          "#8070D6",
+          "#A293FD",
+          "#C6C1FD",
+          "#EDECFE"
+        ]
+      },
+      "track-green": {
+        "role": "secondary",
+        "displayName": "Lab Green",
+        "canonical": "#3FD99A",
+        "tonalRamp": [
+          "#000F07",
+          "#012D1C",
+          "#074F34",
+          "#12734E",
+          "#0A9A68",
+          "#14C285",
+          "#53E8A8",
+          "#C3FFDF"
+        ]
+      },
+      "track-amber": {
+        "role": "secondary",
+        "displayName": "Draft Amber",
+        "canonical": "#F4B942",
+        "tonalRamp": [
+          "#120A00",
+          "#322201",
+          "#563D05",
+          "#7D5A0E",
+          "#A87905",
+          "#D39A0E",
+          "#F9BE48",
+          "#FEECCD"
+        ]
+      },
+      "track-steel": {
+        "role": "secondary",
+        "displayName": "Foundations Steel",
+        "canonical": "#9DB0CB",
+        "tonalRamp": [
+          "#010B1D",
+          "#17253A",
+          "#33435A",
+          "#51627B",
+          "#72849D",
+          "#94A7C1",
+          "#B7CBE7",
+          "#E5EFFE"
+        ]
+      },
+      "terminal": {
+        "role": "neutral",
+        "displayName": "Terminal Black",
+        "canonical": "#090E17",
+        "tonalRamp": [
+          "#070B14",
+          "#1F252F",
+          "#3C424D",
+          "#5B626D",
+          "#7C838F",
+          "#9EA5B2",
+          "#C2CAD7",
+          "#E7EFFD"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only, 3.25rem max over two lines; one thesis word in brand coral; leads the 2.625rem headline cap."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section heads and the register close."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Door and tile titles."
+      },
+      "title-card": {
+        "displayName": "Card title",
+        "purpose": "Course card titles, one step below Title."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default Arabic reading text at 1.8 leading; 1.6 in English."
+      },
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "Card and tile copy in text-2."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, form labels, CTAs."
+      },
+      "latin": {
+        "displayName": "Latin",
+        "purpose": "English terms inside Arabic: skills, certs, roles; the full face under html[lang=en]."
+      },
+      "display-en": {
+        "displayName": "Display (English)",
+        "purpose": "Hero H1 under html[lang=en] only, 3.5rem max; the only place display tracking tightens."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Terminal, course codes, scores, board cells, topology labels. Never prose."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float",
+        "value": "0 24px 60px -24px rgba(0,0,0,.75), 0 2px 8px rgba(0,0,0,.25)",
+        "purpose": "Floating objects only: terminal, flag toast, register form, draft note."
+      },
+      {
+        "name": "coral-lift",
+        "value": "0 10px 26px -12px rgba(239,64,80,.7), inset 0 1px 0 rgba(255,255,255,.16)",
+        "purpose": "Primary button at rest."
+      },
+      {
+        "name": "coral-lift-hover",
+        "value": "0 16px 34px -14px rgba(239,64,80,.85), inset 0 1px 0 rgba(255,255,255,.16)",
+        "purpose": "Primary button hover."
+      },
+      {
+        "name": "tinted-hover-glow",
+        "value": "0 26px 50px -30px <hue>",
+        "purpose": "Door (coral) and course card (track hue) hover."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 4px rgba(239,64,80,.18)",
+        "purpose": "Focused inputs."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "All state transitions and entrances."
+      },
+      {
+        "name": "state",
+        "value": ".2s",
+        "purpose": "Colour and border changes."
+      },
+      {
+        "name": "lift",
+        "value": ".3s-.5s",
+        "purpose": "Hover rises and glows."
+      },
+      {
+        "name": "rise",
+        "value": "rise .55s, stagger 45ms",
+        "purpose": "Course cards entering after a filter change."
+      },
+      {
+        "name": "blink",
+        "value": "1.05s steps(1) infinite",
+        "purpose": "Terminal caret."
+      },
+      {
+        "name": "march",
+        "value": "1.1s linear infinite",
+        "purpose": "Topology attack path."
+      },
+      {
+        "name": "pulse",
+        "value": "2.4s",
+        "purpose": "Live status dot."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce collapses all animation and transition to .01ms",
+        "purpose": "Required."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs",
+        "value": "420px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "980px"
+      },
+      {
+        "name": "nav-tight",
+        "value": "1040px"
+      },
+      {
+        "name": "lg",
+        "value": "1140px"
+      }
+    ],
+    "direction": {
+      "default": "rtl",
+      "toggle": "html[lang=en][dir=ltr]",
+      "anchors": {
+        "--start-x": "100% (rtl) / 0% (ltr)",
+        "--end-x": "0% (rtl) / 100% (ltr)",
+        "--glow-x": "26% (rtl) / 74% (ltr)"
+      }
+    },
+    "draftMode": {
+      "switch": "html[data-draft]",
+      "marks": "[data-proposal]",
+      "samples": "[data-samples] shown only in draft mode",
+      "underline": "2px dotted #F4B942, offset .34em, cursor help, tooltip"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single coral action per cluster: register, submit.",
+      "html": "<button class=\"ds-btn-primary\">سجّل الآن <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"transform:scaleX(-1)\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:.6em;padding:1.05em 1.7em;border:1px solid transparent;border-radius:10px;background:#DC2E42;color:#fff;font-family: 'Readex Pro', 'Alexandria', system-ui, sans-serif;font-size:1.0625rem;font-weight:600;line-height:1.2;cursor:pointer;box-shadow:0 10px 26px -12px rgba(239,64,80,.7),inset 0 1px 0 rgba(255,255,255,.16);transition:background-color .2s,box-shadow .3s cubic-bezier(.16,1,.3,1),transform .3s cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{background:#C92539;box-shadow:0 16px 34px -14px rgba(239,64,80,.85),inset 0 1px 0 rgba(255,255,255,.16);transform:translateY(-1px)}.ds-btn-primary:active{transform:none}.ds-btn-primary:focus-visible{outline:2px solid #EF4050;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary route beside the primary.",
+      "html": "<button class=\"ds-btn-ghost\">اختر مسارك</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;padding:1.05em 1.7em;border:1px solid #2C3A55;border-radius:10px;background:rgba(255,255,255,.02);color:#F3F6FB;font-family: 'Readex Pro', 'Alexandria', system-ui, sans-serif;font-size:1.0625rem;font-weight:600;line-height:1.2;cursor:pointer;transition:background-color .2s,border-color .2s}.ds-btn-ghost:hover{border-color:#3A4B6B;background:rgba(255,255,255,.05)}.ds-btn-ghost:focus-visible{outline:2px solid #EF4050;outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Form field with coral focus halo.",
+      "html": "<label class=\"ds-field\" dir=\"rtl\"><span>الاسم الكامل</span><input class=\"ds-input\" placeholder=\"اكتب اسمك\"></label>",
+      "css": ".ds-field{display:grid;gap:8px;font-family: 'Readex Pro', 'Alexandria', system-ui, sans-serif;color:#F3F6FB;font-size:.9375rem;font-weight:600;background:#131C2C;padding:20px}.ds-input{min-height:50px;padding:12px 14px;border:1px solid #2C3A55;border-radius:10px;background:#0E1523;color:#F3F6FB;font:inherit;font-weight:400;font-size:1rem;caret-color:#EF4050;transition:border-color .2s,box-shadow .2s,background-color .2s}.ds-input::placeholder{color:#7B89A2}.ds-input:hover{border-color:#3A4B6B}.ds-input:focus,.ds-input:focus-visible{outline:none;border-color:#EF4050;background:#101828;box-shadow:0 0 0 4px rgba(239,64,80,.18)}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Header links, language toggle and small coral CTA.",
+      "html": "<nav class=\"ds-nav\" dir=\"rtl\"><a href=\"#\">الكورسات</a><a href=\"#\">طريقتنا</a><a href=\"#\">الأسئلة</a><button class=\"ds-lang\">EN</button><a class=\"ds-cta\" href=\"#\">سجّل الآن</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:2px;padding:14px 20px;background:rgba(11,17,28,.97);border-bottom:1px solid #212D43;font-family: 'Readex Pro', 'Alexandria', system-ui, sans-serif;}.ds-nav a{padding:10px 14px;border-radius:8px;color:#AAB6CA;font-size:.96875rem;font-weight:500;text-decoration:none;transition:color .2s,background-color .2s}.ds-nav a:hover{color:#F3F6FB;background:rgba(255,255,255,.045)}.ds-nav a:focus-visible,.ds-lang:focus-visible{outline:2px solid #EF4050;outline-offset:3px}.ds-lang{margin-inline-start:auto;height:42px;padding-inline:14px;border:1px solid #2C3A55;border-radius:10px;background:transparent;color:#AAB6CA;font:600 .875rem/1 'Mona Sans',sans-serif;cursor:pointer}.ds-lang:hover{color:#F3F6FB;border-color:#3A4B6B}.ds-nav a.ds-cta{margin-inline-start:10px;background:#DC2E42;color:#fff;font-weight:600;border-radius:10px;padding:.72em 1.15em}.ds-nav a.ds-cta:hover{background:#C92539;color:#fff}"
+    },
+    {
+      "name": "Filter Tabs",
+      "kind": "chip",
+      "refersTo": "tab",
+      "description": "Segmented audience filter with counts.",
+      "html": "<div class=\"ds-tabs\" dir=\"rtl\" role=\"tablist\"><button role=\"tab\" aria-selected=\"true\">الكل <span>12</span></button><button role=\"tab\" aria-selected=\"false\">اليافعون <span>2</span></button><button role=\"tab\" aria-selected=\"false\">المحترفون <span>4</span></button></div>",
+      "css": ".ds-tabs{display:inline-flex;gap:4px;padding:5px;border:1px solid #212D43;border-radius:12px;background:#131C2C;font-family: 'Readex Pro', 'Alexandria', system-ui, sans-serif;}.ds-tabs button{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:0;border-radius:8px;background:transparent;color:#AAB6CA;font:inherit;font-size:.9375rem;font-weight:500;cursor:pointer;transition:background-color .2s,color .2s}.ds-tabs button:hover{color:#F3F6FB}.ds-tabs button:focus-visible{outline:2px solid #EF4050;outline-offset:2px}.ds-tabs button[aria-selected=true]{background:#1F2B41;color:#F3F6FB;box-shadow:inset 0 0 0 1px #2C3A55}.ds-tabs span{min-width:24px;padding:2px 7px;border-radius:99px;background:rgba(255,255,255,.06);color:#8290A8;font-size:.75rem;text-align:center}.ds-tabs [aria-selected=true] span{background:#DC2E42;color:#fff}"
+    },
+    {
+      "name": "Course Card",
+      "kind": "card",
+      "refersTo": "card-course",
+      "description": "Track-hued course card: chip, mono code, title, skills, meta, coral CTA.",
+      "html": "<article class=\"ds-course\" dir=\"rtl\" style=\"--track:#EF4050\"><svg class=\"ds-course__art\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 21V4M5 4h11.5l-2.2 4.2 2.2 4.3H5\"/></svg><div class=\"ds-course__tag\"><span class=\"ds-chip\">Red Team</span><code>RT-201</code></div><h3>اختبار الاختراق العملي</h3><p>تنفّذ هجمات حقيقية داخل مختبرات معزولة.</p><ul><li>Nmap</li><li>Burp Suite</li></ul><button class=\"ds-course__cta\">سجّل اهتمامك</button></article>",
+      "css": ".ds-course{position:relative;display:flex;flex-direction:column;gap:10px;max-width:360px;padding:24px 22px 12px;border:1px solid #212D43;border-radius:16px;background:radial-gradient(90% 60% at 100% 0%,color-mix(in srgb,var(--track) 18%,transparent),transparent 68%),#131C2C;color:#F3F6FB;font-family: 'Readex Pro', 'Alexandria', system-ui, sans-serif;transition:border-color .3s,transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s cubic-bezier(.16,1,.3,1)}.ds-course__art{position:absolute;top:20px;inset-inline-end:20px;width:40px;height:40px;fill:none;stroke:var(--track);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;opacity:.75;pointer-events:none;transition:opacity .4s,transform .7s cubic-bezier(.16,1,.3,1)}.ds-course:hover .ds-course__art{opacity:1;transform:rotate(-6deg)}.ds-course:hover{border-color:color-mix(in srgb,var(--track) 45%,#2C3A55);box-shadow:0 26px 50px -32px color-mix(in srgb,var(--track) 75%,transparent);transform:translateY(-3px)}.ds-course__tag{display:flex;align-items:center;gap:12px}.ds-chip{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border-radius:99px;background:color-mix(in srgb,var(--track) 14%,transparent);color:color-mix(in srgb,var(--track) 72%,#fff);font-size:.78125rem;font-weight:600}.ds-chip::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--track)}.ds-course code{font:500 .75rem/1 'JetBrains Mono',monospace;letter-spacing:.04em;color:#8290A8}.ds-course h3{margin:0;padding-inline-end:52px;font:700 1.1875rem/1.5 'Alexandria',sans-serif}.ds-course p{margin:0;color:#AAB6CA;font-size:.875rem;line-height:1.8}.ds-course ul{display:flex;gap:6px;margin:0;padding:0;list-style:none}.ds-course li{padding:4px 9px;border:1px solid #212D43;border-radius:6px;background:rgba(255,255,255,.03);color:#AAB6CA;font:500 .75rem/1.35 'Mona Sans',sans-serif}.ds-course__cta{margin-top:12px;padding:12px;border:0;border-radius:10px;background:transparent;color:#FF707C;font:inherit;font-size:.9375rem;font-weight:600;text-align:start;cursor:pointer;transition:background-color .2s,color .2s}.ds-course__cta:hover{background:#DC2E42;color:#fff}.ds-course__cta:focus-visible{outline:2px solid #EF4050;outline-offset:3px}"
+    },
+    {
+      "name": "Lab Terminal",
+      "kind": "custom",
+      "refersTo": "terminal",
+      "description": "Signature live terminal window: the page's hero imagery.",
+      "html": "<figure class=\"ds-lab\"><div class=\"ds-lab__bar\"><span class=\"ds-lab__dots\"><i></i><i></i><i></i></span><span>lab-01 — kali</span><span class=\"ds-lab__live\">live</span></div><pre><span class=\"u\">learner@lab</span>:<b>~</b>$ nmap -sV 10.10.14.7\n<span class=\"d\">PORT   STATE SERVICE</span>\n22/tcp <span class=\"ok\">open</span>  ssh\n<span class=\"f\">FLAG{first_blood}</span> <i class=\"c\"></i></pre></figure>",
+      "css": ".ds-lab{margin:0;max-width:460px;overflow:hidden;border:1px solid #2C3A55;border-radius:14px;background:#090E17;box-shadow:0 24px 60px -24px rgba(0,0,0,.75),0 2px 8px rgba(0,0,0,.25),0 0 0 6px rgba(255,255,255,.018)}.ds-lab__bar{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:11px 14px;border-bottom:1px solid #212D43;background:#0F1624;font:500 12px/1 'JetBrains Mono',monospace;color:#AAB6CA;text-align:center}.ds-lab__dots{display:inline-flex;gap:7px}.ds-lab__dots i{width:11px;height:11px;border-radius:50%;background:#243149}.ds-lab__dots i:first-child{background:#EF4050}.ds-lab__live{padding:5px 8px;border-radius:6px;background:rgba(63,217,154,.1);color:#3FD99A;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase}.ds-lab pre{margin:0;padding:18px 20px 20px;font:400 13px/1.62 'JetBrains Mono',monospace;color:#C3CDDE}.ds-lab .u{color:#79BCFF;font-weight:700}.ds-lab b{color:#F3F6FB}.ds-lab .d{color:#93A1BA;font-weight:700}.ds-lab .ok{color:#3FD99A}.ds-lab .f{padding:1px 6px;border-radius:4px;background:#3FD99A;color:#06130D;font-weight:700}.ds-lab .c{display:inline-block;width:.62em;height:1.15em;margin-bottom:-.22em;background:#EF4050;animation:ds-blink 1.05s steps(1) infinite}@keyframes ds-blink{50%{opacity:0}}@media (prefers-reduced-motion:reduce){.ds-lab .c{animation:none}}"
+    },
+    {
+      "name": "Draft Proposal Mark",
+      "kind": "custom",
+      "refersTo": "draft-mode",
+      "description": "Content-honesty mark: amber dotted underline on unconfirmed values under html[data-draft].",
+      "html": "<p class=\"ds-draft\" dir=\"rtl\"><span class=\"ds-draft__badge\">مسودة</span> المدة <span class=\"ds-proposal\" title=\"مقترح بانتظار التأكيد\">40 ساعة</span> و<span class=\"ds-proposal\" title=\"مقترح بانتظار التأكيد\">12 مختبراً</span></p>",
+      "css": ".ds-draft{display:flex;align-items:center;gap:8px;margin:0;padding:14px;border:1px solid rgba(244,185,66,.35);border-radius:12px;background:#1A2130;color:#AAB6CA;font-family: 'Readex Pro', 'Alexandria', system-ui, sans-serif;font-size:.9375rem}.ds-draft__badge{padding:4px 9px;border-radius:6px;background:#F4B942;color:#1B1405;font-size:.75rem;font-weight:700}.ds-proposal{color:#F3F6FB;text-decoration:underline dotted #F4B942 2px;text-underline-offset:.34em;cursor:help}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Lit Range",
+    "overview": "A night-time training range: a deep navy ground, brightest toward the centre, with raised navy panels standing on it like lab stations. The one warm light in the room is apptrainers coral. It marks what you can act on, what is live, the Red Team, and the single thesis word of the hero. Everything else is cool: white bold Arabic display, blue-gray reading text, hairline navy borders.\n\nThis is the category standard executed at full fidelity, not a reinvention. The craft bar is Hack The Box Academy; the brand is apptrainers, and its logo and #EF4050 red are binding. The imagery is the practice itself: a live terminal, a network topology with a marching attack path, a CTF scoreboard, and thin per-track line marks. There are no photographs, no stock hackers, and no invented statistics. Values that are proposals stay visibly marked as proposals until real data replaces them.\n\nThe page is Arabic-first and right-to-left, with English as a full peer. Every horizontal decision is written in logical terms so the whole system mirrors when direction flips. Density is moderate: generous section rhythm, compact information inside panels.",
+    "keyCharacteristics": [
+      "Navy ground with a radial centre-light and a dotted grid; coral dots scatter only on the lab side of the hero.",
+      "One warm accent (coral) against a cool neutral ramp; five muted track hues are reserved for course taxonomy.",
+      "Tonal layering first: ground, raised ground, panel, panel-2, panel-3. Shadows are reserved for floating objects.",
+      "Radii step 8 / 10 / 12 / 16: controls are tighter, containers softer.",
+      "Mono appears only where a machine would speak: terminal, course codes, scores, board cells.",
+      "Draft mode makes content honesty visible: proposals carry an amber dotted underline."
+    ],
+    "rules": [
+      {
+        "name": "The One Warm Light Rule",
+        "body": "Coral is the only warm accent outside the track taxonomy and draft mode. It marks action, live state, the Red Team and one thesis word. If an element is not one of those, it is not coral.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Corals Rule",
+        "body": "#EF4050 for marks, large type and focus. #DC2E42 for any fill carrying white text. #FF707C for red text smaller than a heading on dark. Never swap them.",
+        "section": "colors"
+      },
+      {
+        "name": "The Track Owns Its Hue Rule",
+        "body": "A track colour appears only on elements that belong to that track (chip, dot, glow, line mark, hover border). Track hues never become generic decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Arabic Breathes Rule",
+        "body": "Arabic gets no negative letter-spacing and taller line-heights (body 1.8, headings 1.3 to 1.5). Tightened tracking and compressed leading are applied only under `html[lang=\"en\"]`.",
+        "section": "typography"
+      },
+      {
+        "name": "The Machine Voice Rule",
+        "body": "Mono is reserved for code, identifiers and data: the terminal, course codes, scores, board cells and topology labels. Never set prose, headings or buttons in mono.",
+        "section": "typography"
+      },
+      {
+        "name": "The Latin Peer Rule",
+        "body": "English words inside Arabic copy (skills, certifications, roles, course English names) are set in Mona Sans, not in the Arabic face's Latin glyphs.",
+        "section": "typography"
+      },
+      {
+        "name": "The Logical Axis Rule",
+        "body": "Every horizontal property is logical (`inline-start/end`, `margin-inline`, `padding-inline`, `text-align: start`). Direction-dependent backgrounds read `--start-x`, `--end-x` and `--glow-x`, which flip under `html[dir=\"ltr\"]`. Directional icons flip with `scaleX(-1)` in RTL. The topology diagram alone is pinned `direction: ltr`.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Until Floating Rule",
+        "body": "Cards and tiles are flat at rest. A neutral shadow means the object floats above the page, and a tinted shadow means hover. Nothing else casts one.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Contained Mark Rule",
+        "body": "Track and door line marks sit wholly inside the card, inset from the inline-end top corner. They never crop at, or bleed past, the card edge, and the title reserves that corner with inline-end padding.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Nesting Radius Rule",
+        "body": "An inner element never has a larger radius than its container. Controls at 10px sit inside cards at 16px, and cells at 7px sit inside tiles.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** use #DC2E42 (brand-strong) for any fill that carries white text, #EF4050 for marks, large type and focus, and #FF707C for small red text on dark.",
+      "**Do** write every horizontal property logically, and read direction-dependent positions from `--start-x`, `--end-x` and `--glow-x`.",
+      "**Do** keep Arabic at normal letter-spacing with body line-height 1.8, and apply negative tracking only under `html[lang=\"en\"]`.",
+      "**Do** mark every unconfirmed number, name, mapping or policy with `data-proposal` so draft mode underlines it, and render sample testimonials only inside `[data-samples]`.",
+      "**Do** tell the story with the practice itself: the terminal, the topology, the CTF board, level meters and per-track line marks.",
+      "**Do** give each course track exactly its own hue, applied as a chip, dot, glow, line mark and hover border.",
+      "**Do** keep line marks fully inside the card (course 40px, door 44px, inset about 20px from the inline-end top corner), and pad the title's inline end to clear them.",
+      "**Do** use tabular figures for every count, score, timer and meta value.",
+      "**Do** respect `prefers-reduced-motion`. Motion is limited to state easing (`cubic-bezier(.16,1,.3,1)`), the typing terminal, the caret, the marching attack path, the live pulse and the staggered card rise."
+    ],
+    "donts": [
+      "**Don't** use stock hacker photography, hooded figures or binary-rain imagery.",
+      "**Don't** present invented statistics, partners, employers, accreditations or testimonials as real; unconfirmed values stay under draft-mode marks.",
+      "**Don't** build walls of icon cards. Icons are 24px line strokes (1.75 width, round joins) that support text, never replace it.",
+      "**Don't** set prose, headings or buttons in mono.",
+      "**Don't** put white text on #EF4050, or on any track hue.",
+      "**Don't** add a second warm accent. Amber is reserved for draft-mode honesty and terminal hits, and the track hues for their tracks.",
+      "**Don't** crop, oversize or bleed a line mark past a card edge.",
+      "**Don't** alter, recolour or restyle the apptrainers logo. Use the dark-ground mark on navy."
+    ]
+  }
+}

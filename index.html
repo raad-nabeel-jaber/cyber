@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-draft>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>apptrainers | كورسات الأمن السيبراني بالتطبيق العملي</title>
+  <meta name="description" content="برامج تدريبية في الأمن السيبراني لكل المستويات، من طلاب المدارس إلى محترفي تقنية المعلومات: مختبرات عملية، وتحضير للشهادات الدولية، ومسار وظيفي واضح.">
+  <meta name="theme-color" content="#0B111C">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="apptrainers | كورسات الأمن السيبراني بالتطبيق العملي">
+  <meta property="og:description" content="مختبرات عملية، وتحضير للشهادات الدولية، ومسار وظيفي واضح لكل المستويات.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Mona+Sans:wght@400..800&family=Readex+Pro:wght@300..700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/content.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">تخطَّ إلى المحتوى</a>
+
+  <aside class="draft-note" data-draft-note hidden>
+    <span class="draft-note__badge" data-i18n="draft.badge">مسودة</span>
+    <p><span class="draft-note__long" data-i18n-html="draft.text">كل ما تحته <span data-proposal>خط منقّط</span> مقترح بانتظار التأكيد: الأعمار، والساعات والمختبرات، والشهادات وربطها بالكورسات، والسياسات. والآراء أمثلة.</span><span class="draft-note__short" data-i18n-html="draft.short">ما تحته <span data-proposal>خط منقّط</span> مقترح بانتظار التأكيد.</span></p>
+    <button type="button" data-draft-dismiss aria-label="إخفاء التنبيه" data-i18n-attr="aria-label:draft.hide"><svg class="i" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </aside>
+
+  <!-- Icon sprite: 24px grid, 1.75 stroke, round joins -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11.5l-2.2 4.2 2.2 4.3H5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6.2L4.8 18.1A2 2 0 0 0 6.5 21h11a2 2 0 0 0 1.7-2.9L14 9.2V3M7.4 15h9.2"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M8.7 13.4 7.2 21l4.8-2.6 4.8 2.6-1.5-7.6"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.2A2.2 2.2 0 0 1 10.7 3h2.6a2.2 2.2 0 0 1 2.2 2.2V7M3 12.5h18"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0V4zM16 5.5h3v1.8A3.2 3.2 0 0 1 15.8 10.5M8 5.5H5v1.8a3.2 3.2 0 0 0 3.2 3.2M12 13v4M8.5 21h7M9.5 17h5"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.6 8.4-2.1 5.1-5.1 2.1 2.1-5.1 5.1-2.1z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+    <!-- Track marks -->
+    <symbol id="t-juniors" viewBox="0 0 24 24"><path d="M5 5h5a2 2 0 1 1 4 0h5v5a2 2 0 1 1 0 4v5h-5a2 2 0 1 0-4 0H5v-5a2 2 0 1 0 0-4V5z"/></symbol>
+    <symbol id="t-foundations" viewBox="0 0 24 24"><path d="m12 4 8 4.5-8 4.5-8-4.5L12 4zM4 12.5 12 17l8-4.5M4 16.5 12 21l8-4.5"/></symbol>
+    <symbol id="t-red" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.4"/><path d="M12 2.5v4M12 17.5v4M2.5 12h4M17.5 12h4"/></symbol>
+    <symbol id="t-blue" viewBox="0 0 24 24"><path d="M12 3l7 3v5.5c0 4.3-3 7.9-7 9.5-4-1.6-7-5.2-7-9.5V6l7-3z"/><path d="m8.8 12.2 2.2 2.2 4.4-4.6"/></symbol>
+    <symbol id="t-cloud" viewBox="0 0 24 24"><path d="M7.5 18.5h9.5a3.75 3.75 0 0 0 .4-7.48 5.25 5.25 0 0 0-10.1-1.1A4.25 4.25 0 0 0 7.5 18.5z"/><path d="M10.5 14.5h3"/></symbol>
+  </svg>
+
+  <div class="announce" role="region" aria-label="إعلان" data-i18n-attr="aria-label:announce.label">
+    <div class="container announce__inner">
+      <span class="announce__dot" aria-hidden="true"></span>
+      <p class="announce__text"><span class="announce__long" data-i18n="announce.text">برامج الأمن السيبراني لكل المستويات، من المدرسة حتى الاحتراف</span><span class="announce__short" data-i18n="announce.short">برامج السايبر لكل المستويات</span></p>
+      <a class="announce__link" href="#register"><span class="announce__long" data-i18n="announce.cta">سجّل اهتمامك</span><span class="announce__short" data-i18n="announce.ctaShort">سجّل اهتمامك</span><svg class="i i--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="apptrainers، الصفحة الرئيسية" data-i18n-attr="aria-label:nav.home">
+        <img src="assets/apptrainers-mark-dark.svg" alt="apptrainers" width="150" height="40">
+      </a>
+
+      <nav class="nav" aria-label="التنقل الرئيسي" data-i18n-attr="aria-label:nav.label">
+        <ul class="nav__list" id="site-menu" data-menu>
+          <li><a href="#paths" data-i18n="nav.paths">المسارات</a></li>
+          <li><a href="#courses" data-i18n="nav.courses">الكورسات</a></li>
+          <li><a href="#method" data-i18n="nav.method">طريقتنا</a></li>
+          <li><a href="#journey" data-i18n="nav.journey">رحلتك</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">الأسئلة الشائعة</a></li>
+          <li class="nav__cta-item"><a class="btn btn--primary btn--block" href="#register" data-i18n="nav.cta">سجّل الآن</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch to English">
+          <svg class="i" aria-hidden="true"><use href="#i-globe"/></svg>
+          <span data-lang-label lang="en">EN</span>
+        </button>
+        <a class="btn btn--primary btn--sm header__cta" href="#register" data-i18n="nav.cta">سجّل الآن</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+          <span class="sr-only" data-menu-label>القائمة</span>
+          <svg class="i i--menu" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="i i--close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title" id="hero-title" data-i18n-html="hero.title">تعلّم الأمن السيبراني <span class="hl">بالتطبيق</span>، لا بالتلقين.</h1>
+          <p class="hero__lead" data-i18n="hero.lead">من طلاب المدارس إلى محترفي تقنية المعلومات: مسار لكل مستوى، ومختبرات عملية حقيقية، وتحضير للشهادات الدولية، وطريق واضح إلى أول وظيفة في المجال.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#register"><span data-i18n="hero.cta">سجّل الآن</span><svg class="i i--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost btn--lg" href="#paths" data-i18n="hero.cta2">اختر مسارك</a>
+          </div>
+          <ul class="hero__facts" aria-label="لمحة عن البرامج" data-i18n-attr="aria-label:hero.facts.label">
+            <li><span data-proposal><strong>5</strong> <span data-i18n="hero.facts.levels">مستويات</span></span></li>
+            <li data-i18n="hero.facts.labs">مختبرات عملية في كل كورس</li>
+            <li data-i18n="hero.facts.ctf">مسابقات CTF</li>
+            <li data-i18n="hero.facts.certs">تحضير للشهادات الدولية</li>
+          </ul>
+        </div>
+
+        <figure class="hero__lab" aria-label="مثال لجلسة في مختبر عملي: فحص الخدمات، ثم اكتشاف ملف مكشوف، ثم التقاط العلم" data-i18n-attr="aria-label:hero.labLabel">
+          <div class="lab-wrap">
+          <div class="lab" dir="ltr">
+            <div class="lab__bar">
+              <span class="lab__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="lab__title">student@lab: ~/web-101</span>
+              <span class="lab__status-pill"><span class="lab__pulse"></span>vpn</span>
+            </div>
+<pre class="lab__screen" data-terminal aria-hidden="true"><code><span class="t-frame">┌──(</span><span class="t-user">student@lab</span><span class="t-frame">)-[</span><span class="t-path">~/web-101</span><span class="t-frame">]</span>
+<span class="t-frame">└─$</span> <span class="t-cmd">nmap -sV 10.10.14.7</span>
+<span class="t-dim">Starting Nmap 7.94 ( https://nmap.org )</span>
+<span class="t-head">PORT     STATE SERVICE VERSION</span>
+22/tcp   <span class="t-ok">open</span>  ssh     OpenSSH 8.9p1
+80/tcp   <span class="t-ok">open</span>  http    Apache httpd 2.4.52
+3306/tcp <span class="t-ok">open</span>  mysql   MySQL 8.0.36
+
+<span class="t-frame">┌──(</span><span class="t-user">student@lab</span><span class="t-frame">)-[</span><span class="t-path">~/web-101</span><span class="t-frame">]</span>
+<span class="t-frame">└─$</span> <span class="t-cmd">gobuster dir -u http://10.10.14.7 -w common.txt</span>
+<span class="t-hit">/admin</span>          <span class="t-dim">(Status: 301)</span>
+<span class="t-hit">/backup.zip</span>     <span class="t-dim">(Status: 200) [Size: 4096]</span>
+
+<span class="t-frame">┌──(</span><span class="t-user">student@lab</span><span class="t-frame">)-[</span><span class="t-path">~/web-101</span><span class="t-frame">]</span>
+<span class="t-frame">└─$</span> <span class="t-cmd">unzip -p backup.zip flag.txt</span>
+<span class="t-flag">AT{h4nds_0n_b34ts_sl1d3s}</span>
+<span class="t-frame">┌──(</span><span class="t-user">student@lab</span><span class="t-frame">)-[</span><span class="t-path">~/web-101</span><span class="t-frame">]</span>
+<span class="t-frame">└─$</span> <span class="t-caret"></span></code></pre>
+            <div class="lab__foot">
+              <span>target 10.10.14.7</span>
+              <span class="lab__timer">00:14:32</span>
+            </div>
+          </div>
+
+          <div class="flag-toast" data-flag-toast>
+            <span class="flag-toast__icon" aria-hidden="true"><svg class="i"><use href="#i-flag"/></svg></span>
+            <span class="flag-toast__body">
+              <strong data-i18n="hero.toastTitle">تم التقاط العلم</strong>
+              <small data-i18n="hero.toastText">+100 نقطة · تحدي Web 101</small>
+            </span>
+          </div>
+          </div>
+          <figcaption class="hero__caption" data-i18n="hero.caption">مثال من تمرين عملي في مختبر تطبيقات الويب</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Audience doors -->
+    <section class="section doors" id="paths" aria-labelledby="doors-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="doors-title" data-i18n="doors.title">من أين تبدأ؟</h2>
+          <p data-i18n="doors.lead">اختر الوصف الأقرب لك، وسنرشدك إلى نقطة البداية المناسبة.</p>
+        </header>
+
+        <ol class="stairs">
+          <li class="door" data-audience="teens" style="--step: 0">
+            <svg class="door__art" aria-hidden="true"><use href="#t-juniors"/></svg>
+            <h3 data-i18n="doors.teens.title">طلاب المدارس واليافعون</h3>
+            <p class="door__text" data-i18n="doors.teens.text">برامج مكثّفة وممتعة تكتشف فيها كيف يعمل الإنترنت وكيف نحميه، وتخوض أول تحدٍّ CTF لك.</p>
+            <dl class="door__meta">
+              <div><dt data-i18n="doors.levelLabel">المستوى</dt><dd class="door__lvl"><span class="lvl" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span dir="ltr">1</span></dd></div>
+              <div><dt data-i18n="doors.forLabel">لمن</dt><dd data-i18n="doors.teens.meta" data-proposal>من 13 إلى 17 سنة</dd></div>
+              <div><dt data-i18n="doors.startLabel">تبدأ بـ</dt><dd data-i18n="doors.teens.start">مستكشفو السايبر</dd></div>
+            </dl>
+            <a class="door__cta" href="#courses" data-door="teens"><span data-i18n="doors.cta">ابدأ من هنا</span><svg class="i i--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="door" data-audience="beginners" style="--step: 1">
+            <svg class="door__art" aria-hidden="true"><use href="#t-foundations"/></svg>
+            <h3 data-i18n="doors.beginners.title">المبتدئون ومغيّرو المسار</h3>
+            <p class="door__text" data-i18n="doors.beginners.text">لا تحتاج أي خلفية تقنية. نبدأ معك من الحاسوب والشبكات ولينكس حتى أساسيات الأمن.</p>
+            <dl class="door__meta">
+              <div><dt data-i18n="doors.levelLabel">المستوى</dt><dd class="door__lvl"><span class="lvl" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span dir="ltr">2</span></dd></div>
+              <div><dt data-i18n="doors.forLabel">لمن</dt><dd data-i18n="doors.beginners.meta">بدون متطلبات مسبقة</dd></div>
+              <div><dt data-i18n="doors.startLabel">تبدأ بـ</dt><dd data-i18n="doors.beginners.start">أساسيات الأمن السيبراني</dd></div>
+            </dl>
+            <a class="door__cta" href="#courses" data-door="beginners"><span data-i18n="doors.cta">ابدأ من هنا</span><svg class="i i--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="door" data-audience="students" style="--step: 2">
+            <svg class="door__art" aria-hidden="true"><use href="#i-briefcase"/></svg>
+            <h3 data-i18n="doors.students.title">طلاب الجامعات والخريجون</h3>
+            <p class="door__text" data-i18n="doors.students.text">مسار مهني يجهّزك لأول وظيفة في الأمن، محلل SOC أو مختبِر اختراق مبتدئ، مع مشاريع حقيقية لملفك.</p>
+            <dl class="door__meta">
+              <div><dt data-i18n="doors.levelLabel">المستوى</dt><dd class="door__lvl"><span class="lvl" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span dir="ltr">3</span></dd></div>
+              <div><dt data-i18n="doors.forLabel">لمن</dt><dd data-i18n="doors.students.meta">الحاسوب والهندسة وغيرها</dd></div>
+              <div><dt data-i18n="doors.startLabel">تبدأ بـ</dt><dd data-i18n="doors.students.start">محلل SOC أو مختبِر اختراق</dd></div>
+            </dl>
+            <a class="door__cta" href="#courses" data-door="students"><span data-i18n="doors.cta">ابدأ من هنا</span><svg class="i i--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="door" data-audience="pros" style="--step: 3">
+            <svg class="door__art" aria-hidden="true"><use href="#i-award"/></svg>
+            <h3 data-i18n="doors.pros.title">محترفو تقنية المعلومات والمبرمجون</h3>
+            <p class="door__text" data-i18n="doors.pros.text">تخصّص عميق في اختبار الاختراق وأمن السحابة والبرمجة الآمنة، وتحضير مركّز للشهادات الدولية.</p>
+            <dl class="door__meta">
+              <div><dt data-i18n="doors.levelLabel">المستوى</dt><dd class="door__lvl"><span class="lvl" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span dir="ltr">4–5</span></dd></div>
+              <div><dt data-i18n="doors.forLabel">لمن</dt><dd data-i18n="doors.pros.meta">خبرة في IT أو البرمجة</dd></div>
+              <div><dt data-i18n="doors.startLabel">تبدأ بـ</dt><dd data-i18n="doors.pros.start">مسارات التخصص والشهادات</dd></div>
+            </dl>
+            <a class="door__cta" href="#courses" data-door="pros"><span data-i18n="doors.cta">ابدأ من هنا</span><svg class="i i--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="section courses" id="courses" aria-labelledby="courses-title">
+      <div class="container">
+        <header class="section__head section__head--split">
+          <div>
+            <h2 id="courses-title" data-i18n="courses.title">الكورسات والمسارات</h2>
+            <p data-i18n="courses.lead">كل كورس مبني حول مختبرات عملية. اختر مستواك واستعرض ما يناسبك.</p>
+          </div>
+          <div class="tabs" role="tablist" aria-label="تصفية الكورسات حسب الفئة" data-i18n-attr="aria-label:courses.tabsLabel" data-tabs></div>
+        </header>
+        <div class="course-grid" id="course-panel" role="tabpanel" data-course-grid></div>
+        <noscript><p class="noscript" data-i18n="courses.noscript">فعّل JavaScript لعرض قائمة الكورسات، أو انتقل مباشرة إلى نموذج التسجيل.</p></noscript>
+      </div>
+    </section>
+
+    <!-- Method -->
+    <section class="section method" id="method" aria-labelledby="method-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="method-title" data-i18n="method.title">هكذا نعلّم</h2>
+          <p data-i18n="method.lead">النظرية وحدها لا توقف أي هجوم. لهذا يدور كل شيء عندنا حول التطبيق.</p>
+        </header>
+
+        <div class="bento">
+          <article class="tile tile--labs">
+            <div class="tile__copy">
+              <h3 data-i18n="method.labs.title">مختبرات عملية حقيقية</h3>
+              <p data-i18n="method.labs.text">تهاجم وتدافع داخل بيئات معزولة تحاكي شبكات الشركات، بدل مشاهدة الشرائح. كل مفهوم تتعلمه تطبّقه في الجلسة نفسها.</p>
+              <ul class="ticks">
+                <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="method.labs.p1">بيئات معزولة وآمنة</span></li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="method.labs.p2">سيناريوهات من الواقع</span></li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="method.labs.p3">تقييم فوري لحلولك</span></li>
+              </ul>
+            </div>
+            <figure class="topo" aria-label="مخطط شبكة المختبر: جهاز المتدرب يعبر الجدار الناري إلى خادم الويب، ثم إلى قاعدة البيانات حيث العلم" data-i18n-attr="aria-label:method.labs.diagram">
+              <svg class="topo__svg topo__svg--wide" viewBox="0 0 640 280" aria-hidden="true">
+                <g class="topo__links">
+                  <path d="M282 140H308V210H334"/>
+                  <path d="M446 210H504"/>
+                  <path class="topo__link--faint" d="M390 96V184"/>
+                </g>
+                <g class="topo__attack">
+                  <path d="M128 140H170"/>
+                  <path d="M282 140H308V70H334"/>
+                  <path d="M446 70H504"/>
+                </g>
+                <g class="topo__node topo__node--you" transform="translate(16 114)"><rect width="112" height="52" rx="10"/><text x="56" y="23">student</text><text class="topo__sub" x="56" y="40">10.10.14.2</text></g>
+                <g class="topo__node" transform="translate(170 114)"><rect width="112" height="52" rx="10"/><text x="56" y="23">fw-01</text><text class="topo__sub" x="56" y="40">pfSense</text></g>
+                <g class="topo__node topo__node--hit" transform="translate(334 44)"><rect width="112" height="52" rx="10"/><text x="56" y="23">web-01</text><text class="topo__sub" x="56" y="40">:80 apache</text></g>
+                <g class="topo__node" transform="translate(334 184)"><rect width="112" height="52" rx="10"/><text x="56" y="23">ws-07</text><text class="topo__sub" x="56" y="40">windows 10</text></g>
+                <g class="topo__node topo__node--hit" transform="translate(504 44)"><rect width="112" height="52" rx="10"/><text x="56" y="23">db-01</text><text class="topo__sub" x="56" y="40">:3306 mysql</text></g>
+                <g class="topo__node" transform="translate(504 184)"><rect width="112" height="52" rx="10"/><text x="56" y="23">dc-01</text><text class="topo__sub" x="56" y="40">active dir.</text></g>
+                <g class="topo__flag" transform="translate(604 44)"><circle r="13"/><path d="M-4.5 6.5V-6.5M-4.5 -6.5h8.2l-1.6 3 1.6 3h-8.2"/></g>
+              </svg>
+              <svg class="topo__svg topo__svg--tall" viewBox="0 0 300 362" aria-hidden="true">
+                <g class="topo__links">
+                  <path d="M150 157V181H222V205"/>
+                  <path d="M222 255V299"/>
+                  <path class="topo__link--faint" d="M134 230H166"/>
+                </g>
+                <g class="topo__attack">
+                  <path d="M150 61V105"/>
+                  <path d="M150 157V181H78V205"/>
+                  <path d="M78 255V299"/>
+                </g>
+                <g class="topo__node topo__node--you" transform="translate(94 9)"><rect width="112" height="52" rx="10"/><text x="56" y="23">student</text><text class="topo__sub" x="56" y="40">10.10.14.2</text></g>
+                <g class="topo__node" transform="translate(94 105)"><rect width="112" height="52" rx="10"/><text x="56" y="23">fw-01</text><text class="topo__sub" x="56" y="40">pfSense</text></g>
+                <g class="topo__node topo__node--hit" transform="translate(22 205)"><rect width="112" height="50" rx="10"/><text x="56" y="22">web-01</text><text class="topo__sub" x="56" y="39">:80 apache</text></g>
+                <g class="topo__node" transform="translate(166 205)"><rect width="112" height="50" rx="10"/><text x="56" y="22">ws-07</text><text class="topo__sub" x="56" y="39">windows 10</text></g>
+                <g class="topo__node topo__node--hit" transform="translate(22 299)"><rect width="112" height="50" rx="10"/><text x="56" y="22">db-01</text><text class="topo__sub" x="56" y="39">:3306 mysql</text></g>
+                <g class="topo__node" transform="translate(166 299)"><rect width="112" height="50" rx="10"/><text x="56" y="22">dc-01</text><text class="topo__sub" x="56" y="39">active dir.</text></g>
+                <g class="topo__flag" transform="translate(122 299)"><circle r="13"/><path d="M-4.5 6.5V-6.5M-4.5 -6.5h8.2l-1.6 3 1.6 3h-8.2"/></g>
+              </svg>
+              <figcaption class="topo__legend"><span class="topo__swatch" aria-hidden="true"></span><span data-i18n="method.labs.legend">مسار الهجوم في التمرين</span></figcaption>
+            </figure>
+          </article>
+
+          <article class="tile tile--certs">
+            <h3 data-i18n="method.certs.title">تحضير للشهادات الدولية</h3>
+            <p data-i18n="method.certs.text">المسارات المتقدمة مبنية على محاور أشهر الشهادات، مع اختبارات تجريبية وخطة دراسة واضحة.</p>
+            <ul class="certs">
+              <li class="cert"><span class="cert__name" dir="ltr">Security+</span><span class="cert__org">CompTIA</span><span class="cert__course" data-proposal>CR-410</span></li>
+              <li class="cert"><span class="cert__name" dir="ltr">CySA+</span><span class="cert__org">CompTIA</span><span class="cert__course" data-proposal>BT-201</span></li>
+              <li class="cert"><span class="cert__name" dir="ltr">eJPT</span><span class="cert__org">INE</span><span class="cert__course" data-proposal>RT-201</span></li>
+              <li class="cert"><span class="cert__name" dir="ltr">OSCP</span><span class="cert__org">OffSec</span><span class="cert__course" data-proposal>CR-450</span></li>
+            </ul>
+          </article>
+
+          <article class="tile tile--ctf">
+            <h3 data-i18n="method.ctf.title">مجتمع ومسابقات CTF</h3>
+            <p data-i18n="method.ctf.text">تنافس مع زملائك في تحديات Capture The Flag، واعمل ضمن فريق، وتعلّم من حلول غيرك.</p>
+            <div class="board" dir="ltr" role="img" aria-label="مثال للوحة تحديات CTF: أربع فئات بثلاث درجات، ست منها محلولة" data-i18n-attr="aria-label:method.ctf.board">
+              <span class="board__cat">WEB</span><span class="board__cat">CRYPTO</span><span class="board__cat">FORENSICS</span><span class="board__cat">OSINT</span>
+              <span class="board__cell is-solved">100</span><span class="board__cell is-solved">100</span><span class="board__cell is-solved">100</span><span class="board__cell is-solved">100</span>
+              <span class="board__cell is-solved">200</span><span class="board__cell">200</span><span class="board__cell is-solved">200</span><span class="board__cell">200</span>
+              <span class="board__cell">300</span><span class="board__cell">300</span><span class="board__cell">300</span><span class="board__cell">300</span>
+            </div>
+            <p class="board__score"><span data-i18n="method.ctf.score">نقاط الفريق</span> <strong>800</strong></p>
+          </article>
+
+          <article class="tile tile--career">
+            <div class="tile__copy">
+              <h3 data-i18n="method.career.title">مسار وظيفي واضح</h3>
+              <p data-i18n="method.career.text">تخرج بملف مشاريع حقيقية، وتتدرّب على المقابلات، وتعرف بالضبط أي دور يناسبك.</p>
+            </div>
+            <div class="career__cols">
+              <div>
+                <h4 data-i18n="method.career.projectsTitle">مشاريع تبنيها لملفك</h4>
+                <ul class="ticks">
+                  <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="method.career.p1">تقرير اختبار اختراق كامل لتطبيق ويب</span></li>
+                  <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="method.career.p2">قواعد كشف ولوحة مراقبة على SIEM</span></li>
+                  <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="method.career.p3">تحقيق في حادثة أمنية من السجلات حتى التقرير</span></li>
+                  <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="method.career.p4">تدقيق أمني لبيئة سحابية</span></li>
+                </ul>
+              </div>
+              <div>
+                <h4 data-i18n="method.career.rolesTitle">أدوار تتأهل لها</h4>
+                <ul class="roles">
+                  <li>SOC Analyst</li>
+                  <li>Penetration Tester</li>
+                  <li>Incident Responder</li>
+                  <li>Cloud Security Engineer</li>
+                  <li>Application Security</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey -->
+    <section class="section journey" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="journey-title" data-i18n="journey.title">رحلتك خطوة بخطوة</h2>
+          <p data-i18n="journey.lead">من أول نموذج حتى أول وظيفة، نرافقك في كل مرحلة.</p>
+        </header>
+        <ol class="steps">
+          <li class="step"><span class="step__num">1</span><h3 data-i18n="journey.s1.title">سجّل اهتمامك</h3><p data-i18n="journey.s1.text">املأ نموذج التسجيل في أقل من دقيقتين.</p></li>
+          <li class="step"><span class="step__num">2</span><h3 data-i18n="journey.s2.title">حدّد نقطة البداية</h3><p data-i18n="journey.s2.text">نتواصل معك لنفهم خلفيتك ونرشّح المستوى الأنسب لك.</p></li>
+          <li class="step"><span class="step__num">3</span><h3 data-i18n="journey.s3.title">تعلّم بالتطبيق</h3><p data-i18n-html="journey.s3.text"><span data-proposal>جلسات مع مدرّبين</span>، ومختبرات عملية في كل خطوة.</p></li>
+          <li class="step"><span class="step__num">4</span><h3 data-i18n="journey.s4.title">نافس وابنِ ملفك</h3><p data-i18n="journey.s4.text">مسابقات CTF ومشاريع حقيقية تضيفها إلى سيرتك الذاتية.</p></li>
+          <li class="step step--goal"><span class="step__num"><svg class="i" aria-hidden="true"><use href="#i-flag"/></svg><span class="sr-only">5</span></span><h3 data-i18n="journey.s5.title">انطلق مهنياً</h3><p data-i18n-html="journey.s5.text"><span data-proposal>شهادة إتمام</span>، وتحضير لشهادة دولية، ودعم في طريقك إلى أول وظيفة.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Stories: sample quotes only render in draft mode (see README) -->
+    <section class="section stories" id="stories" aria-labelledby="stories-title" data-samples>
+      <div class="container">
+        <header class="section__head">
+          <h2 id="stories-title" data-i18n="stories.title">قصص المتدربين</h2>
+          <p class="stories__note" data-i18n="stories.note">هذه أمثلة للتصميم فقط، وستُستبدل بآراء حقيقية من المتدربين.</p>
+        </header>
+        <div class="quotes">
+          <figure class="quote">
+            <span class="quote__tag" data-i18n="stories.sample">مثال توضيحي</span>
+            <blockquote data-i18n="stories.q1.text">لأول مرة أفهم كيف يحدث الاختراق فعلاً، لأنني نفّذته بنفسي داخل المختبر بدلاً من أن أحفظه.</blockquote>
+            <figcaption><strong data-i18n="stories.q1.who">طالبة جامعية</strong><span data-i18n="stories.q1.track">مسار SOC</span></figcaption>
+          </figure>
+          <figure class="quote">
+            <span class="quote__tag" data-i18n="stories.sample">مثال توضيحي</span>
+            <blockquote data-i18n="stories.q2.text">بدأت من الصفر بدون أي خلفية تقنية، وكان المسار متدرّجاً بوضوح من أول يوم.</blockquote>
+            <figcaption><strong data-i18n="stories.q2.who">مغيّر مسار</strong><span data-i18n="stories.q2.track">الأساسيات</span></figcaption>
+          </figure>
+          <figure class="quote">
+            <span class="quote__tag" data-i18n="stories.sample">مثال توضيحي</span>
+            <blockquote data-i18n="stories.q3.text">مسابقات CTF كانت أكثر شيء حمّسني. صرنا فريقاً، وتعلّمنا من بعضنا.</blockquote>
+            <figcaption><strong data-i18n="stories.q3.who">طالب مدرسة</strong><span data-i18n="stories.q3.track">مستكشفو السايبر</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <header class="section__head faq__head">
+          <h2 id="faq-title" data-i18n="faq.title">الأسئلة الشائعة</h2>
+          <p data-i18n="faq.lead">لم تجد إجابتك؟ اكتب سؤالك في خانة الملاحظات عند التسجيل.</p>
+        </header>
+        <div class="faq__list">
+          <details class="qa" open><summary><span data-i18n="faq.q1.q">هل أحتاج إلى خلفية تقنية للبدء؟</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p data-i18n="faq.q1.a">لا. مسار الأساسيات مصمّم لمن يبدأ من الصفر، ويأخذك خطوة بخطوة من أساسيات الحاسوب والشبكات حتى مفاهيم الأمن.</p></details>
+          <details class="qa"><summary><span data-i18n="faq.q2.q">ما العمر المناسب لبرامج اليافعين؟</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p data-i18n-html="faq.q2.a">برنامجا «مستكشفو السايبر» و«تحديات CTF للناشئين» مصمّمان <span data-proposal>للأعمار من 13 إلى 17 سنة</span>، بأسلوب ممتع وآمن. ونطلب رقم ولي الأمر عند التسجيل.</p></details>
+          <details class="qa"><summary><span data-i18n="faq.q3.q">كيف أعرف المستوى المناسب لي؟</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p data-i18n="faq.q3.a">املأ نموذج التسجيل واختر الوصف الأقرب لك، وسنتواصل معك لنتفق على نقطة البداية الأنسب قبل أن تبدأ.</p></details>
+          <details class="qa"><summary><span data-i18n="faq.q4.q">هل التدريب حضوري أم عن بُعد؟</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p data-i18n="faq.q4.a">نعلن طريقة التدريب ومواعيد كل دفعة عند فتح التسجيل لها، ويمكنك إخبارنا بتفضيلك في نموذج التسجيل.</p></details>
+          <details class="qa"><summary><span data-i18n="faq.q5.q">هل أحصل على شهادة؟</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p data-i18n-html="faq.q5.a">تحصل على <span data-proposal>شهادة إتمام من apptrainers</span> عند إنهاء الكورس، والمسارات المتقدمة تجهّزك لاختبارات دولية مثل Security+&lrm; وeJPT وOSCP.</p></details>
+          <details class="qa"><summary><span data-i18n="faq.q6.q">ماذا أحتاج للبدء؟</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p data-i18n-html="faq.q6.a">جهاز لابتوب، واتصال جيد بالإنترنت، ورغبة حقيقية في التعلّم. <span data-proposal>نساعدك في تجهيز بيئة المختبر في أول جلسة</span>.</p></details>
+          <details class="qa"><summary><span data-i18n="faq.q7.q">هل تعلّم الاختراق قانوني؟</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p data-i18n="faq.q7.a">نعم، عندما يتم بإذن وداخل بيئات مخصّصة لذلك. نعلّم الاختراق الأخلاقي فقط، داخل مختبرات معزولة، مع تركيز واضح على أخلاقيات المهنة والإطار القانوني.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Register (the page's close) -->
+    <section class="section register" id="register" aria-labelledby="register-title">
+      <div class="container">
+        <div class="register__panel">
+          <div class="register__copy">
+            <h2 id="register-title" data-i18n="register.title">سجّل الآن وابدأ رحلتك</h2>
+            <p data-i18n="register.lead">املأ النموذج وسنتواصل معك لنحدد معاً المستوى والمسار الأنسب لك.</p>
+            <ul class="assure">
+              <li><span class="assure__icon" aria-hidden="true"><svg class="i"><use href="#i-card"/></svg></span><span data-i18n="register.a1" data-proposal>التسجيل لا يلزمك بأي دفع الآن</span></li>
+              <li><span class="assure__icon" aria-hidden="true"><svg class="i"><use href="#i-compass"/></svg></span><span data-i18n="register.a2">نساعدك في اختيار المستوى المناسب</span></li>
+              <li><span class="assure__icon" aria-hidden="true"><svg class="i"><use href="#i-lock"/></svg></span><span data-i18n="register.a3">نستخدم بياناتك للتواصل معك بخصوص التسجيل</span></li>
+            </ul>
+          </div>
+
+          <div class="register__form-wrap">
+            <!-- Set data-endpoint to your backend URL (e.g. a Laravel route). Empty = demo mode. -->
+            <form class="form" id="register-form" novalidate data-form data-endpoint="" aria-label="نموذج التسجيل" data-i18n-attr="aria-label:form.label">
+              <p class="form__summary" role="alert" data-form-summary hidden></p>
+
+              <div class="field">
+                <label for="f-name" data-i18n="form.name">الاسم الكامل</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err" placeholder="مثال: سارة أحمد" data-i18n-attr="placeholder:form.namePh">
+                <p class="field__error" id="f-name-err" data-error-for="name" hidden></p>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-phone" data-i18n="form.phone">رقم الهاتف (واتساب)</label>
+                  <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required dir="ltr" aria-describedby="f-phone-err" placeholder="رقمك مع رمز الدولة" data-i18n-attr="placeholder:form.phonePh">
+                  <p class="field__error" id="f-phone-err" data-error-for="phone" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="f-email"><span data-i18n="form.email">البريد الإلكتروني</span> <span class="field__opt" data-i18n="form.optional">(اختياري)</span></label>
+                  <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" dir="ltr" aria-describedby="f-email-err" placeholder="name@example.com" data-i18n-attr="placeholder:form.emailPh">
+                  <p class="field__error" id="f-email-err" data-error-for="email" hidden></p>
+                </div>
+              </div>
+
+              <fieldset class="field" aria-describedby="f-aud-err">
+                <legend data-i18n="form.audience">أنا…</legend>
+                <div class="choices choices--2">
+                  <label class="choice"><input type="radio" name="audience" value="teens" required><span data-i18n="form.aud.teens">طالب مدرسة</span></label>
+                  <label class="choice"><input type="radio" name="audience" value="beginners"><span data-i18n="form.aud.beginners">مبتدئ أو أغيّر مساري</span></label>
+                  <label class="choice"><input type="radio" name="audience" value="students"><span data-i18n="form.aud.students">طالب جامعي أو خريج</span></label>
+                  <label class="choice"><input type="radio" name="audience" value="pros"><span data-i18n="form.aud.pros">محترف IT أو مبرمج</span></label>
+                </div>
+                <p class="field__error" id="f-aud-err" data-error-for="audience" hidden></p>
+              </fieldset>
+
+              <div class="field" data-guardian hidden>
+                <label for="f-guardian" data-i18n="form.guardian">رقم ولي الأمر</label>
+                <input id="f-guardian" name="guardian" type="tel" inputmode="tel" dir="ltr" aria-describedby="f-guardian-hint f-guardian-err" placeholder="رقمك مع رمز الدولة" data-i18n-attr="placeholder:form.phonePh">
+                <p class="field__hint" id="f-guardian-hint" data-i18n="form.guardianHint">مطلوب للمشاركين دون 18 سنة.</p>
+                <p class="field__error" id="f-guardian-err" data-error-for="guardian" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="f-course" data-i18n="form.course">الكورس الذي يهمّك</label>
+                <div class="select">
+                  <select id="f-course" name="course" data-course-select>
+                    <option value="" data-i18n="form.courseHelp">ساعدوني في الاختيار</option>
+                  </select>
+                  <svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg>
+                </div>
+              </div>
+
+              <fieldset class="field">
+                <legend data-i18n="form.format">طريقة التدريب المفضّلة</legend>
+                <div class="choices choices--3">
+                  <label class="choice"><input type="radio" name="format" value="in-person"><span data-i18n="form.fmt.inperson">حضوري</span></label>
+                  <label class="choice"><input type="radio" name="format" value="online"><span data-i18n="form.fmt.online">عن بُعد</span></label>
+                  <label class="choice"><input type="radio" name="format" value="any" checked><span data-i18n="form.fmt.any">لا فرق</span></label>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label for="f-notes"><span data-i18n="form.notes">ملاحظات</span> <span class="field__opt" data-i18n="form.optional">(اختياري)</span></label>
+                <textarea id="f-notes" name="notes" rows="3" placeholder="أخبرنا عن خلفيتك أو أهدافك أو أي سؤال لديك" data-i18n-attr="placeholder:form.notesPh"></textarea>
+              </div>
+
+              <div class="field">
+                <label class="consent">
+                  <input type="checkbox" name="consent" required aria-describedby="f-consent-err">
+                  <span class="consent__box" aria-hidden="true"><svg class="i"><use href="#i-check"/></svg></span>
+                  <span data-i18n="form.consent">أوافق على أن تتواصل معي apptrainers بخصوص التسجيل.</span>
+                </label>
+                <p class="field__error" id="f-consent-err" data-error-for="consent" hidden></p>
+              </div>
+
+              <button class="btn btn--primary btn--lg btn--block" type="submit" data-submit>
+                <span class="btn__spinner" aria-hidden="true"></span>
+                <span data-submit-label data-i18n="form.submit">أرسل طلب التسجيل</span>
+              </button>
+              <p class="form__error" role="alert" data-form-error hidden></p>
+            </form>
+
+            <div class="form-success" data-form-success hidden tabindex="-1">
+              <span class="form-success__icon" aria-hidden="true"><svg class="i"><use href="#i-check"/></svg></span>
+              <h3 data-i18n="form.success.title">وصلنا طلبك!</h3>
+              <p data-success-text></p>
+              <button class="btn btn--ghost" type="button" data-form-reset data-i18n="form.success.again">إرسال طلب آخر</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/apptrainers-mark-dark.svg" alt="apptrainers" width="165" height="44" loading="lazy">
+        <p class="footer__tagline" data-i18n="footer.tagline">نحوّل الأفكار إلى واقع عبر تعليم مبتكر.</p>
+        <p class="footer__tagline-en" lang="en" dir="ltr">Translating ideas to reality through innovative education</p>
+      </div>
+      <nav class="footer__nav" aria-label="روابط التذييل" data-i18n-attr="aria-label:footer.label">
+        <ul>
+          <li><a href="#paths" data-i18n="nav.paths">المسارات</a></li>
+          <li><a href="#courses" data-i18n="nav.courses">الكورسات</a></li>
+          <li><a href="#method" data-i18n="nav.method">طريقتنا</a></li>
+          <li><a href="#journey" data-i18n="nav.journey">رحلتك</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">الأسئلة الشائعة</a></li>
+          <li><a href="#register" data-i18n="nav.cta">سجّل الآن</a></li>
+        </ul>
+      </nav>
+      <div class="footer__meta">
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch to English">
+          <svg class="i" aria-hidden="true"><use href="#i-globe"/></svg>
+          <span data-lang-label lang="en">EN</span>
+        </button>
+        <p>© <span data-year>2026</span> apptrainers. <span data-i18n="footer.rights">جميع الحقوق محفوظة.</span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
