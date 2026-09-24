@@ -1723,56 +1723,6 @@ html[data-draft] [data-proposal] {
   cursor: help;
 }
 
-
-.draft-note {
-  position: fixed;
-  inset-block-end: 16px;
-  inset-inline-end: 16px;
-  z-index: 60;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  max-width: min(440px, calc(100vw - 32px));
-  padding-block: 10px;
-  padding-inline: 14px 8px;
-  border: 1px solid rgba(244, 185, 66, .35);
-  border-radius: 12px;
-  background: #1A2130;
-  box-shadow: var(--shadow-lg);
-  color: var(--text-2);
-  font-size: .8125rem;
-  line-height: 1.5;
-}
-
-.draft-note__badge {
-  flex: none;
-  padding: 4px 9px;
-  border-radius: 6px;
-  background: var(--amber);
-  color: #1B1405;
-  font-size: .75rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.draft-note__short { display: none; }
-
-.draft-note [data-draft-dismiss] {
-  display: grid;
-  flex: none;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border: 0;
-  border-radius: 8px;
-  background: transparent;
-  color: var(--text-3);
-  cursor: pointer;
-}
-
-.draft-note [data-draft-dismiss]:hover { background: rgba(255, 255, 255, .06); color: var(--text); }
-.draft-note [data-draft-dismiss] .i { width: 18px; height: 18px; }
-
 /* ---------- Motion ---------- */
 
 @keyframes blink { 50% { opacity: 0; } }
@@ -1903,21 +1853,6 @@ html[data-draft] [data-proposal] {
   .announce__short { display: inline; }
   .announce__link { white-space: nowrap; }
 
-  /* Draft notice becomes an in-flow strip above the announcement bar: it never floats over content. */
-  .draft-note {
-    position: relative;
-    inset: auto;
-    max-width: none;
-    padding-block: 8px;
-    padding-inline: var(--gutter) 8px;
-    border: 0;
-    border-bottom: 1px solid rgba(244, 185, 66, .3);
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .draft-note__long { display: none; }
-  .draft-note__short { display: inline; }
   .field-row { grid-template-columns: minmax(0, 1fr); }
 
   .footer__inner { grid-template-columns: minmax(0, 1fr); }

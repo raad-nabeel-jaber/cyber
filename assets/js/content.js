@@ -221,11 +221,7 @@ window.AT_CONTENT = {
         rights: "جميع الحقوق محفوظة."
       },
       draft: {
-        badge: "مسودة",
-        text: `كل ما تحته <span data-proposal>خط منقّط</span> مقترح بانتظار التأكيد: الأعمار، والساعات والمختبرات، والشهادات وربطها بالكورسات، والسياسات. والآراء أمثلة.`,
-        short: `ما تحته <span data-proposal>خط منقّط</span> مقترح بانتظار التأكيد.`,
-        mark: "مقترح، بانتظار التأكيد",
-        hide: "إخفاء التنبيه"
+        mark: "مقترح، بانتظار التأكيد"
       }
     },
 
@@ -440,11 +436,7 @@ window.AT_CONTENT = {
         rights: "All rights reserved."
       },
       draft: {
-        badge: "Draft",
-        text: `Anything with a <span data-proposal>dotted underline</span> is a proposal awaiting confirmation: ages, hours and labs, certificates and their course mapping, and policies. Reviews are samples.`,
-        short: `Items with a <span data-proposal>dotted underline</span> are proposals.`,
-        mark: "Proposal, awaiting confirmation",
-        hide: "Hide notice"
+        mark: "Proposal, awaiting confirmation"
       }
     }
   },

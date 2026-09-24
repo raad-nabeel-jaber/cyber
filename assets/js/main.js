@@ -540,16 +540,7 @@
     success.focus();
   }
 
-  /* ---------- Draft notice + footer year ---------- */
-
-  const draftNote = $("[data-draft-note]");
-  if (draftNote && root.hasAttribute("data-draft") && !store.get("at-draft-hidden", true)) {
-    draftNote.hidden = false;
-    $("[data-draft-dismiss]", draftNote).addEventListener("click", () => {
-      draftNote.hidden = true;
-      store.set("at-draft-hidden", "1", true);
-    });
-  }
+  /* ---------- Footer year ---------- */
 
   const year = $("[data-year]");
   if (year) year.textContent = String(new Date().getFullYear());
