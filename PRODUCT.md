@@ -55,7 +55,7 @@ Derived: one hands-on ladder that runs from a teen's first challenge to a profes
 - Brand red: `#EF4050`, sampled from the official SVG.
 - Logo assets: `~/Downloads/AppLogo.svg` is the light-ground version, with "trainers" and the tagline tail in black. The user-supplied PNG is the dark-ground version, with "trainers" in white.
 - The user made the logo binding. Asked what would make the design feel wrong, they pointed to the logo: the page must be faithful to this brand.
-- **Logo swap (2026-10-01):** the user replaced the apptrainers logo with the Vision 3020 logo (`assets/vision-3020-white.svg`, white lettering, red artwork, transparent; same file as the cyber2 project) in the header, footer and favicon. They asked for the logo only, so apptrainers text elsewhere on the page is unchanged for now.
+- **Logo swap (2026-10-01):** the user replaced the apptrainers logo with the Vision 3020 logo (`assets/vision-3020-white.svg`, white lettering, red artwork, transparent; same file as the cyber2 project) in the header, footer and favicon. The same day they asked for the brand name in the page text to become Vision 3020 too: page title, footer brand line ("Vision 3020 للتدريب" in place of the apptrainers slogan), copyright, consent and the FAQ certificate answer. The coral palette is unchanged.
 - **Standing visual preference (2026-09-24):** the user was shown two rounds of distinctive directions (a lock cutaway, a CTF board, a fight card, security printing, keycaps). They chose the category standard: a dark cyber-academy landing page. Convention is the commitment. The craft bar is **Hack The Box Academy**, executed at full fidelity in apptrainers' own brand (coral red replaces HTB's green), with no irony and no smuggled quirk.
 
 ## Evidence on Hand

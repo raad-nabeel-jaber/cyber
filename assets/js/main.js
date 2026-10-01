@@ -1,5 +1,5 @@
 /*
- * apptrainers: landing page behaviour.
+ * Vision 3020: landing page behaviour.
  * Language switching, course filters, the hero lab terminal, and the registration form.
  * Content comes from content.js (window.AT_CONTENT).
  */
@@ -509,7 +509,7 @@
     if (!endpoint) {
       // Demo mode: no backend wired yet. Set data-endpoint on #register-form to go live.
       await new Promise((r) => window.setTimeout(r, 900));
-      console.info("[apptrainers] Demo mode, registration not sent anywhere:", payload);
+      console.info("[Vision 3020] Demo mode, registration not sent anywhere:", payload);
       return;
     }
     const headers = { "Content-Type": "application/json", Accept: "application/json" };

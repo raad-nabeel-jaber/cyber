@@ -1,5 +1,5 @@
 /*
- * apptrainers: cybersecurity landing page content (Arabic + English).
+ * Vision 3020: cybersecurity landing page content (Arabic + English).
  *
  * Every piece of copy on the page lives here. Edit this file to change text,
  * courses, hours, or certifications; index.html only holds the Arabic defaults
@@ -12,7 +12,7 @@ window.AT_CONTENT = {
   i18n: {
     ar: {
       meta: {
-        title: "apptrainers | كورسات الأمن السيبراني بالتطبيق العملي",
+        title: "Vision 3020 | كورسات الأمن السيبراني بالتطبيق العملي",
         description: "اخترق كمهاجم. دافع كمحلل. وانطلق بشهادة دولية معتمدة. مسارات تدريب مبنية على الأدوار الحقيقية في سوق العمل: Red Team وBlue Team وPurple Team."
       },
       skip: "تخطَّ إلى المحتوى",
@@ -157,7 +157,7 @@ window.AT_CONTENT = {
         q2: { q: "ما العمر المناسب لبرامج اليافعين؟", a: `برنامجا «مستكشفو السايبر» و«تحديات CTF للناشئين» مصمّمان <span data-proposal>للأعمار من 13 إلى 17 سنة</span>، بأسلوب ممتع وآمن. ونطلب رقم ولي الأمر عند التسجيل.` },
         q3: { q: "كيف أعرف المستوى المناسب لي؟", a: "املأ نموذج التسجيل واختر الوصف الأقرب لك، وسنتواصل معك لنتفق على نقطة البداية الأنسب قبل أن تبدأ." },
         q4: { q: "هل التدريب حضوري أم عن بُعد؟", a: "نعلن طريقة التدريب ومواعيد كل دفعة عند فتح التسجيل لها، ويمكنك إخبارنا بتفضيلك في نموذج التسجيل." },
-        q5: { q: "هل أحصل على شهادة؟", a: `تحصل على <span data-proposal>شهادة إتمام من apptrainers</span> عند إنهاء الكورس، والمسارات المتقدمة تجهّزك لاختبارات دولية مثل Security+\u200E وCEH وCySA+\u200E.` },
+        q5: { q: "هل أحصل على شهادة؟", a: `تحصل على <span data-proposal>شهادة إتمام من Vision 3020</span> عند إنهاء الكورس، والمسارات المتقدمة تجهّزك لاختبارات دولية مثل Security+\u200E وCEH وCySA+\u200E.` },
         q6: { q: "ماذا أحتاج للبدء؟", a: `جهاز لابتوب، واتصال جيد بالإنترنت، ورغبة حقيقية في التعلّم. <span data-proposal>نساعدك في تجهيز بيئة المختبر في أول جلسة</span>.` },
         q7: { q: "هل تعلّم الاختراق قانوني؟", a: "نعم، عندما يتم بإذن وداخل بيئات مخصّصة لذلك. نعلّم الاختراق الأخلاقي فقط، داخل مختبرات معزولة، مع تركيز واضح على أخلاقيات المهنة والإطار القانوني." }
       },
@@ -193,7 +193,7 @@ window.AT_CONTENT = {
         fmt: { inperson: "حضوري", online: "عن بُعد", any: "لا فرق" },
         notes: "ملاحظات",
         notesPh: "أخبرنا عن خلفيتك أو أهدافك أو أي سؤال لديك",
-        consent: "أوافق على أن تتواصل معي apptrainers بخصوص التسجيل.",
+        consent: "أوافق على أن تتواصل معي Vision 3020 بخصوص التسجيل.",
         submit: "أرسل طلب التسجيل",
         sending: "جارٍ الإرسال…",
         errors: {
@@ -213,7 +213,7 @@ window.AT_CONTENT = {
         }
       },
       footer: {
-        tagline: "نحوّل الأفكار إلى واقع عبر تعليم مبتكر.",
+        tagline: "Vision 3020 للتدريب",
         label: "روابط التذييل",
         rights: "جميع الحقوق محفوظة."
       },
@@ -224,7 +224,7 @@ window.AT_CONTENT = {
 
     en: {
       meta: {
-        title: "apptrainers | Hands-on Cybersecurity Courses",
+        title: "Vision 3020 | Hands-on Cybersecurity Courses",
         description: "Hack like an attacker. Defend like an analyst. Launch with an accredited international certification. Training tracks built around real job-market roles: Red Team, Blue Team and Purple Team."
       },
       skip: "Skip to content",
@@ -369,7 +369,7 @@ window.AT_CONTENT = {
         q2: { q: "What age are the teen programs for?", a: `Cyber Explorers and CTF Juniors are designed <span data-proposal>for ages 13 to 17</span>, in a fun and safe format. We ask for a parent or guardian's number when you register.` },
         q3: { q: "How do I know which level is right for me?", a: "Fill in the registration form and pick the description closest to you. We'll contact you to agree on the right starting point before you begin." },
         q4: { q: "Is the training in person or online?", a: "We announce the format and schedule for each cohort when its registration opens. You can tell us your preference in the registration form." },
-        q5: { q: "Do I get a certificate?", a: `You receive <span data-proposal>an apptrainers completion certificate</span> when you finish a course, and the advanced tracks prepare you for international exams such as Security+, CEH and CySA+.` },
+        q5: { q: "Do I get a certificate?", a: `You receive <span data-proposal>a Vision 3020 completion certificate</span> when you finish a course, and the advanced tracks prepare you for international exams such as Security+, CEH and CySA+.` },
         q6: { q: "What do I need to get started?", a: `A laptop, a decent internet connection and a real drive to learn. <span data-proposal>We'll help you set up your lab environment in the first session</span>.` },
         q7: { q: "Is learning to hack legal?", a: "Yes, when it's done with permission and inside environments built for it. We only teach ethical hacking, inside isolated labs, with a clear focus on professional ethics and the legal framework." }
       },
@@ -405,7 +405,7 @@ window.AT_CONTENT = {
         fmt: { inperson: "In person", online: "Online", any: "No preference" },
         notes: "Notes",
         notesPh: "Tell us about your background, your goals or any question you have",
-        consent: "I agree to be contacted by apptrainers about my registration.",
+        consent: "I agree to be contacted by Vision 3020 about my registration.",
         submit: "Send registration",
         sending: "Sending…",
         errors: {
@@ -425,7 +425,7 @@ window.AT_CONTENT = {
         }
       },
       footer: {
-        tagline: "Translating ideas to reality through innovative education.",
+        tagline: "Vision 3020 for Training",
         label: "Footer links",
         rights: "All rights reserved."
       },
