@@ -182,7 +182,7 @@ A cool navy-and-slate system lit by a single coral voice, with a quiet five-hue 
 - **Coral Wash** (`rgba(239, 64, 80, .12)`, from `--brand-soft`): tinted icon wells behind brand-text icons. Glows use the same hue at 15-17% alpha in radial gradients.
 
 ### Secondary
-- **Track palette** (track-amber, track-steel, track-blue, track-violet, track-green, plus brand for Red Team): one hue per course track: Juniors amber, Foundations steel, Red Team coral, Blue Team blue, Cloud violet, Certification green. A track hue appears as a 14% chip wash, a 6px dot, a corner glow at 18%, the line-art stroke, and the hover border. It never fills a button.
+- **Track palette** (track-amber, track-steel, track-blue, track-violet, track-green, plus brand for Red Team): one hue per course category: Foundations steel, Red Team coral, Blue Team blue, Advanced (Purple Team) violet, GRC green. A track hue appears as a 14% chip wash, a 6px dot, a corner glow at 18%, the line-art stroke, and the hover border. It never fills a button.
 - **Lab Green** (track-green) also means success and "captured": the terminal's OK lines and flag highlight, the live status pill, tick marks, the journey's goal step, and the form success icon.
 - **Draft Amber** (track-amber) also means "proposal": draft-mode underlines. The terminal uses it for hits.
 
@@ -235,7 +235,7 @@ A cool navy-and-slate system lit by a single coral voice, with a quiet five-hue 
 
 A centred container of 1240px plus a fluid gutter (clamp 16px to 40px) on each side. Sections breathe vertically at clamp 72px to 112px. Section heads are capped at 680px, and the split variant puts the head and its filter tabs on one baseline. Bands alternate between the ground and a raised ground with hairline borders, so rhythm comes from surface, not from dividers.
 
-Grids are explicit and reflow in steps: the audience doors are 4 columns, then 2 (below 1140px), then 1 (below 640px). The doors rise like a staircase: each step adds 40px of minimum height, so the level ladder reads spatially. Courses are 3, 2, then 1. The method section is a 6-column bento (labs 4x2, certifications and CTF 2 each, career full width) that collapses to full-width tiles. The hero, FAQ and register sections are asymmetric two-column splits that stack below 980px, where the nav also becomes a drop-down panel. In-grid gaps sit at 16 to 24px (18px typical); card padding is about 24px 22px.
+Grids are explicit and reflow in steps: the track doors (Red, Blue, Purple, GRC; meta rows list tools, certifications and roles) are 4 columns, then 2 (below 1140px), then 1 (below 640px). The doors rise like a staircase: each step adds 40px of minimum height, so the level ladder reads spatially. Courses are 3, 2, then 1. The method section is a 6-column bento (labs 4x2, certifications and CTF 2 each, career full width) that collapses to full-width tiles. The hero, FAQ and register sections are asymmetric two-column splits that stack below 980px, where the nav also becomes a drop-down panel. In-grid gaps sit at 16 to 24px (18px typical); card padding is about 24px 22px.
 
 **The Logical Axis Rule.** Every horizontal property is logical (`inline-start/end`, `margin-inline`, `padding-inline`, `text-align: start`). Direction-dependent backgrounds read `--start-x`, `--end-x` and `--glow-x`, which flip under `html[dir="ltr"]`. Directional icons flip with `scaleX(-1)` in RTL. The topology diagram alone is pinned `direction: ltr`.
 
@@ -337,4 +337,4 @@ Numbered 48px tiles (12px radius) joined by a 2px rail that fades from coral to 
 - **Don't** put white text on #EF4050, or on any track hue.
 - **Don't** add a second warm accent. Amber is reserved for draft-mode honesty and terminal hits, and the track hues for their tracks.
 - **Don't** crop, oversize or bleed a line mark past a card edge.
-- **Don't** alter, recolour or restyle the apptrainers logo. Use the dark-ground mark on navy.
+- **Don't** alter, recolour or restyle the logo. Since 2026-10-01 it is the Vision 3020 white-lettering mark (56px tall in the header and footer, 48px below 640px).

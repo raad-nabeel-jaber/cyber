@@ -5,15 +5,15 @@
  * courses, hours, or certifications; index.html only holds the Arabic defaults
  * so the page reads correctly before JavaScript runs.
  *
- * Course names, hours, lab counts and certification mappings are a proposal
- * and still need confirming (see README.md).
+ * Hero copy, tracks and the 24 courses come from the client's content PDF
+ * (2026-10-01). GRC-301 has no hours there, so its hours stay hidden until supplied.
  */
 window.AT_CONTENT = {
   i18n: {
     ar: {
       meta: {
         title: "apptrainers | كورسات الأمن السيبراني بالتطبيق العملي",
-        description: "برامج تدريبية في الأمن السيبراني لكل المستويات، من طلاب المدارس إلى محترفي تقنية المعلومات: مختبرات عملية، وتحضير للشهادات الدولية، ومسار وظيفي واضح."
+        description: "اخترق كمهاجم. دافع كمحلل. وانطلق بشهادة دولية معتمدة. مسارات تدريب مبنية على الأدوار الحقيقية في سوق العمل: Red Team وBlue Team وPurple Team."
       },
       skip: "تخطَّ إلى المحتوى",
       announce: {
@@ -25,7 +25,7 @@ window.AT_CONTENT = {
       },
       nav: {
         label: "التنقل الرئيسي",
-        home: "apptrainers، الصفحة الرئيسية",
+        home: "Vision 3020، الصفحة الرئيسية",
         paths: "المسارات",
         courses: "الكورسات",
         method: "طريقتنا",
@@ -37,16 +37,16 @@ window.AT_CONTENT = {
       },
       lang: { label: "EN", switchTo: "Switch to English", code: "en" },
       hero: {
-        title: `تعلّم الأمن السيبراني <span class="hl">بالتطبيق</span>، لا بالتلقين.`,
-        lead: "من طلاب المدارس إلى محترفي تقنية المعلومات: مسار لكل مستوى، ومختبرات عملية حقيقية، وتحضير للشهادات الدولية، وطريق واضح إلى أول وظيفة في المجال.",
+        title: `اخترق&nbsp;كمهاجم. دافع&nbsp;كمحلل. وانطلق <span class="hl">بشهادة دولية معتمدة</span>.`,
+        lead: "مسارات تدريب مبنية على الأدوار الحقيقية في سوق العمل: Red\u00A0Team وBlue\u00A0Team وPurple\u00A0Team. تتدرب على مناهج EC-Council وCompTIA الرسمية، داخل مختبرات تحاكي شبكات الشركات بكل تفاصيلها: Active\u00A0Directory، خوادم ويب، وSIEM حي. وتخرج جاهزاً لاختبار الشهادة ولأول يوم في الوظيفة.",
         cta: "سجّل الآن",
         cta2: "اختر مسارك",
         facts: {
           label: "لمحة عن البرامج",
-          levels: "مستويات",
-          labs: "مختبرات عملية في كل كورس",
-          ctf: "مسابقات CTF",
-          certs: "تحضير للشهادات الدولية"
+          tracks: "<strong>4</strong> مسارات متخصصة",
+          certs: "<strong>15+</strong> شهادة دولية من EC-Council وCompTIA",
+          labs: "<strong>45+</strong> ساعة مختبر عملي في كل مسار",
+          ctf: "<strong>CTF</strong> شهري للمتدربين"
         },
         labLabel: "مثال لجلسة في مختبر عملي: فحص الخدمات، ثم اكتشاف ملف مكشوف، ثم التقاط العلم",
         toastTitle: "تم التقاط العلم",
@@ -54,50 +54,55 @@ window.AT_CONTENT = {
         caption: "مثال من تمرين عملي في مختبر تطبيقات الويب"
       },
       doors: {
-        title: "من أين تبدأ؟",
-        lead: "اختر الوصف الأقرب لك، وسنرشدك إلى نقطة البداية المناسبة.",
-        levelLabel: "المستوى",
-        forLabel: "لمن",
-        startLabel: "تبدأ بـ",
+        title: "اختر مسارك",
+        learnLabel: "تتعلم:",
+        toolsLabel: "الأدوات",
+        frameworksLabel: "الأطر والمعايير",
+        certsLabel: "الشهادات",
+        rolesLabel: "الأدوار",
         cta: "ابدأ من هنا",
-        teens: {
-          level: "المستوى 1",
-          title: "طلاب المدارس واليافعون",
-          text: "برامج مكثّفة وممتعة تكتشف فيها كيف يعمل الإنترنت وكيف نحميه، وتخوض أول تحدٍّ CTF لك.",
-          meta: "من 13 إلى 17 سنة",
-          start: "مستكشفو السايبر"
+        red: {
+          title: "Red\u00A0Team (الأمن الهجومي)",
+          text: "فكّر كالمهاجم.",
+          learn: "جمع المعلومات عن الهدف من المصادر المفتوحة، واختبار تطبيقات الويب ضد أخطر عشر ثغرات عالمياً، واختراق بيئات الدليل النشط من مستخدم عادي حتى السيطرة على النطاق كاملاً، وتصعيد الصلاحيات على أنظمة لينكس وويندوز، والتنقل بين أجهزة الشبكة، ثم كتابة تقرير اختبار اختراق احترافي.",
+          tools: "Burp\u00A0Suite · Nmap · BloodHound",
+          certs: "CEH · CEH\u00A0Practical · PenTest+ · CPENT",
+          roles: "مختبِر اختراق · مختص فريق أحمر · مختبِر تطبيقات ويب"
         },
-        beginners: {
-          level: "المستوى 2",
-          title: "المبتدئون ومغيّرو المسار",
-          text: "لا تحتاج أي خلفية تقنية. نبدأ معك من الحاسوب والشبكات ولينكس حتى أساسيات الأمن.",
-          meta: "بدون متطلبات مسبقة",
-          start: "أساسيات الأمن السيبراني"
+        blue: {
+          title: "Blue\u00A0Team (الأمن الدفاعي وSOC)",
+          text: "اكتشف الهجوم قبل أن يكتمل، واحتوِه قبل أن ينتشر.",
+          learn: "تحليل السجلات وفرز التنبيهات الأمنية، وبناء قواعد كشف ولوحات مراقبة على أنظمة إدارة الأحداث الأمنية، وصيد التهديدات وفق أساليب المهاجمين الموثقة عالمياً، والاستجابة للحوادث الأمنية من أول تنبيه حتى الاحتواء، والتحليل الجنائي الرقمي للذاكرة والأقراص.",
+          tools: "Splunk · Wazuh · Wireshark",
+          certs: "CND · CSA · CySA+ · ECIH · CTIA · CHFI",
+          roles: "محلل مركز عمليات أمنية · مختص استجابة للحوادث · صائد تهديدات · محلل جنائي رقمي"
         },
-        students: {
-          level: "المستوى 3",
-          title: "طلاب الجامعات والخريجون",
-          text: "مسار مهني يجهّزك لأول وظيفة في الأمن، محلل SOC أو مختبِر اختراق مبتدئ، مع مشاريع حقيقية لملفك.",
-          meta: "الحاسوب والهندسة وغيرها",
-          start: "محلل SOC أو مختبِر اختراق"
+        purple: {
+          title: "Purple\u00A0Team والتخصصات المتقدمة",
+          text: "للمحترفين: اربط الهجوم بالدفاع.",
+          learn: "محاكاة هجمات حقيقية وقياس ما رصدته أنظمة الكشف وما فاتها، وتأمين البيئات السحابية من إدارة الهويات والصلاحيات حتى المراقبة، ومراجعة الكود البرمجي واكتشاف ثغراته، وتصميم معمارية أمنية متكاملة للمؤسسات.",
+          tools: "Atomic\u00A0Red\u00A0Team · AWS · Azure",
+          certs: "CCSE · CASE · SecurityX",
+          roles: "مهندس فريق بنفسجي · مهندس أمن سحابي · مهندس أمن تطبيقات · معماري أمن معلومات"
         },
-        pros: {
-          level: "المستويان 4 و5",
-          title: "محترفو تقنية المعلومات والمبرمجون",
-          text: "تخصّص عميق في اختبار الاختراق وأمن السحابة والبرمجة الآمنة، وتحضير مركّز للشهادات الدولية.",
-          meta: "خبرة في IT أو البرمجة",
-          start: "مسارات التخصص والشهادات"
+        grc: {
+          title: "الحوكمة وإدارة المخاطر والامتثال GRC",
+          text: "الأمن لا يبدأ بالأدوات، بل بالقرار.",
+          learn: "بناء نظام إدارة أمن المعلومات من الصفر، وتقييم المخاطر وتحديد أولوياتها وخطط معالجتها، وكتابة السياسات والإجراءات الأمنية، والتحضير للتدقيق الداخلي والخارجي وإغلاق ملاحظاته، وإدارة مخاطر الموردين والأطراف الثالثة، ووضع خطط استمرارية الأعمال والتعافي من الكوارث، وتحويل المخاطر التقنية إلى لغة يفهمها مجلس الإدارة.",
+          frameworks: "ISO\u00A027001 · NIST\u00A0CSF · PCI\u00A0DSS",
+          certs: "EISM · CCISO",
+          roles: "محلل حوكمة ومخاطر وامتثال · مدقق أمن معلومات · مدير أمن معلومات · مسؤول حماية البيانات"
         }
       },
       courses: {
         title: "الكورسات والمسارات",
         lead: "كل كورس مبني حول مختبرات عملية. اختر مستواك واستعرض ما يناسبك.",
         tabsLabel: "تصفية الكورسات حسب الفئة",
-        all: "الكل",
         level: "المستوى {n}",
         levelLabel: "المستوى",
         hours: "الساعات",
         labs: "المختبرات",
+        exercises: "التمارين",
         prepares: "تحضير لـ",
         cta: "سجّل في هذا الكورس",
         empty: "لا توجد كورسات في هذه الفئة حالياً.",
@@ -152,7 +157,7 @@ window.AT_CONTENT = {
         q2: { q: "ما العمر المناسب لبرامج اليافعين؟", a: `برنامجا «مستكشفو السايبر» و«تحديات CTF للناشئين» مصمّمان <span data-proposal>للأعمار من 13 إلى 17 سنة</span>، بأسلوب ممتع وآمن. ونطلب رقم ولي الأمر عند التسجيل.` },
         q3: { q: "كيف أعرف المستوى المناسب لي؟", a: "املأ نموذج التسجيل واختر الوصف الأقرب لك، وسنتواصل معك لنتفق على نقطة البداية الأنسب قبل أن تبدأ." },
         q4: { q: "هل التدريب حضوري أم عن بُعد؟", a: "نعلن طريقة التدريب ومواعيد كل دفعة عند فتح التسجيل لها، ويمكنك إخبارنا بتفضيلك في نموذج التسجيل." },
-        q5: { q: "هل أحصل على شهادة؟", a: `تحصل على <span data-proposal>شهادة إتمام من apptrainers</span> عند إنهاء الكورس، والمسارات المتقدمة تجهّزك لاختبارات دولية مثل Security+\u200E وeJPT وOSCP.` },
+        q5: { q: "هل أحصل على شهادة؟", a: `تحصل على <span data-proposal>شهادة إتمام من apptrainers</span> عند إنهاء الكورس، والمسارات المتقدمة تجهّزك لاختبارات دولية مثل Security+\u200E وCEH وCySA+\u200E.` },
         q6: { q: "ماذا أحتاج للبدء؟", a: `جهاز لابتوب، واتصال جيد بالإنترنت، ورغبة حقيقية في التعلّم. <span data-proposal>نساعدك في تجهيز بيئة المختبر في أول جلسة</span>.` },
         q7: { q: "هل تعلّم الاختراق قانوني؟", a: "نعم، عندما يتم بإذن وداخل بيئات مخصّصة لذلك. نعلّم الاختراق الأخلاقي فقط، داخل مختبرات معزولة، مع تركيز واضح على أخلاقيات المهنة والإطار القانوني." }
       },
@@ -220,7 +225,7 @@ window.AT_CONTENT = {
     en: {
       meta: {
         title: "apptrainers | Hands-on Cybersecurity Courses",
-        description: "Cybersecurity training for every level, from school students to IT professionals: hands-on labs, international certification prep and a clear career path."
+        description: "Hack like an attacker. Defend like an analyst. Launch with an accredited international certification. Training tracks built around real job-market roles: Red Team, Blue Team and Purple Team."
       },
       skip: "Skip to content",
       announce: {
@@ -232,7 +237,7 @@ window.AT_CONTENT = {
       },
       nav: {
         label: "Main navigation",
-        home: "apptrainers home",
+        home: "Vision 3020 home",
         paths: "Paths",
         courses: "Courses",
         method: "Our method",
@@ -244,16 +249,16 @@ window.AT_CONTENT = {
       },
       lang: { label: "عربي", switchTo: "التبديل إلى العربية", code: "ar" },
       hero: {
-        title: `Learn cybersecurity <span class="hl">by doing</span>, not by memorizing.`,
-        lead: "From school students to IT professionals: a path for every level, real hands-on labs, international certification prep, and a clear route to your first job in the field.",
+        title: `Hack like an attacker. Defend like an analyst. Get <span class="hl">globally certified</span>.`,
+        lead: "Training tracks built around real job-market roles: Red Team, Blue Team and Purple Team. You train on the official EC-Council and CompTIA curricula, inside labs that mirror company networks in full detail: Active Directory, web servers and a live SIEM. You leave ready for the certification exam and your first day on the job.",
         cta: "Register now",
         cta2: "Find your path",
         facts: {
           label: "Program highlights",
-          levels: "levels",
-          labs: "Hands-on labs in every course",
-          ctf: "CTF competitions",
-          certs: "International certification prep"
+          tracks: "<strong>4</strong> specialized tracks",
+          certs: "<strong>15+</strong> international certifications from EC-Council and CompTIA",
+          labs: "<strong>45+</strong> hours of hands-on labs per track",
+          ctf: "Monthly <strong>CTF</strong> for trainees"
         },
         labLabel: "Example of a hands-on lab session: scanning services, finding an exposed file, then capturing the flag",
         toastTitle: "Flag captured",
@@ -261,50 +266,55 @@ window.AT_CONTENT = {
         caption: "Example from a hands-on web application lab"
       },
       doors: {
-        title: "Where do you start?",
-        lead: "Pick the description that fits you best, and we'll point you to the right starting point.",
-        levelLabel: "Level",
-        forLabel: "For",
-        startLabel: "Start with",
+        title: "Choose your track",
+        learnLabel: "You'll learn:",
+        toolsLabel: "Tools",
+        frameworksLabel: "Frameworks",
+        certsLabel: "Certifications",
+        rolesLabel: "Roles",
         cta: "Start here",
-        teens: {
-          level: "Level 1",
-          title: "School students & teens",
-          text: "Intensive, fun programs to discover how the internet works and how to protect it, including your first CTF challenge.",
-          meta: "Ages 13–17",
-          start: "Cyber Explorers"
+        red: {
+          title: "Red\u00A0Team (Offensive Security)",
+          text: "Think like an attacker.",
+          learn: "Gathering intelligence on a target from open sources, testing web applications against the world's ten most critical vulnerabilities, breaching Active Directory environments from a regular user all the way to full domain control, escalating privileges on Linux and Windows, moving across the network's machines, then writing a professional penetration test report.",
+          tools: "Burp\u00A0Suite · Nmap · BloodHound",
+          certs: "CEH · CEH\u00A0Practical · PenTest+ · CPENT",
+          roles: "Penetration Tester · Red Team Specialist · Web Application Tester"
         },
-        beginners: {
-          level: "Level 2",
-          title: "Beginners & career switchers",
-          text: "No technical background needed. We start from computers, networks and Linux, all the way to security fundamentals.",
-          meta: "No prerequisites",
-          start: "Cyber Foundations"
+        blue: {
+          title: "Blue\u00A0Team (Defensive Security & SOC)",
+          text: "Detect the attack before it completes, and contain it before it spreads.",
+          learn: "Analyzing logs and triaging security alerts, building detection rules and monitoring dashboards on security event management (SIEM) platforms, hunting threats using globally documented attacker techniques, responding to security incidents from the first alert to containment, and digital forensics on memory and disks.",
+          tools: "Splunk · Wazuh · Wireshark",
+          certs: "CND · CSA · CySA+ · ECIH · CTIA · CHFI",
+          roles: "SOC Analyst · Incident Responder · Threat Hunter · Digital Forensics Analyst"
         },
-        students: {
-          level: "Level 3",
-          title: "University students & graduates",
-          text: "A career track that prepares you for your first security role, SOC analyst or junior pentester, with real projects for your portfolio.",
-          meta: "Computing, engineering & more",
-          start: "SOC Analyst or Junior Pentester"
+        purple: {
+          title: "Purple\u00A0Team & Advanced Specializations",
+          text: "For professionals: connect offense with defense.",
+          learn: "Emulating real attacks and measuring what detection systems caught and what they missed, securing cloud environments from identity and access management through monitoring, reviewing source code and finding its vulnerabilities, and designing an integrated enterprise security architecture.",
+          tools: "Atomic\u00A0Red\u00A0Team · AWS · Azure",
+          certs: "CCSE · CASE · SecurityX",
+          roles: "Purple Team Engineer · Cloud Security Engineer · Application Security Engineer · Information Security Architect"
         },
-        pros: {
-          level: "Levels 4–5",
-          title: "IT professionals & developers",
-          text: "Go deep into penetration testing, cloud security and secure coding, with focused prep for international certifications.",
-          meta: "IT or development experience",
-          start: "Specialist & certification tracks"
+        grc: {
+          title: "Governance, Risk & Compliance (GRC)",
+          text: "Security doesn't start with tools. It starts with decisions.",
+          learn: "Building an information security management system from scratch, assessing risks and setting their priorities and treatment plans, writing security policies and procedures, preparing for internal and external audits and closing their findings, managing vendor and third-party risk, building business continuity and disaster recovery plans, and translating technical risk into language the board understands.",
+          frameworks: "ISO\u00A027001 · NIST\u00A0CSF · PCI\u00A0DSS",
+          certs: "EISM · CCISO",
+          roles: "GRC Analyst · Information Security Auditor · Information Security Manager · Data Protection Officer"
         }
       },
       courses: {
         title: "Courses & tracks",
         lead: "Every course is built around hands-on labs. Choose your level and see what fits.",
-        tabsLabel: "Filter courses by audience",
-        all: "All",
+        tabsLabel: "Filter courses by track",
         level: "Level {n}",
         levelLabel: "Level",
         hours: "Hours",
         labs: "Labs",
+        exercises: "Exercises",
         prepares: "Prepares for",
         cta: "Register for this course",
         empty: "No courses in this category yet.",
@@ -359,7 +369,7 @@ window.AT_CONTENT = {
         q2: { q: "What age are the teen programs for?", a: `Cyber Explorers and CTF Juniors are designed <span data-proposal>for ages 13 to 17</span>, in a fun and safe format. We ask for a parent or guardian's number when you register.` },
         q3: { q: "How do I know which level is right for me?", a: "Fill in the registration form and pick the description closest to you. We'll contact you to agree on the right starting point before you begin." },
         q4: { q: "Is the training in person or online?", a: "We announce the format and schedule for each cohort when its registration opens. You can tell us your preference in the registration form." },
-        q5: { q: "Do I get a certificate?", a: `You receive <span data-proposal>an apptrainers completion certificate</span> when you finish a course, and the advanced tracks prepare you for international exams such as Security+, eJPT and OSCP.` },
+        q5: { q: "Do I get a certificate?", a: `You receive <span data-proposal>an apptrainers completion certificate</span> when you finish a course, and the advanced tracks prepare you for international exams such as Security+, CEH and CySA+.` },
         q6: { q: "What do I need to get started?", a: `A laptop, a decent internet connection and a real drive to learn. <span data-proposal>We'll help you set up your lab environment in the first session</span>.` },
         q7: { q: "Is learning to hack legal?", a: "Yes, when it's done with permission and inside environments built for it. We only teach ethical hacking, inside isolated labs, with a clear focus on professional ethics and the legal framework." }
       },
@@ -425,143 +435,250 @@ window.AT_CONTENT = {
     }
   },
 
-  /* Audience order drives the tabs, the doors and the form. */
-  audiences: {
-    order: ["teens", "beginners", "students", "pros"],
+  /* Category order drives the course tabs; the first category opens by default. */
+  categories: {
+    order: ["foundations", "red", "blue", "advanced", "grc"],
     labels: {
-      teens: { ar: "اليافعون", en: "Teens" },
-      beginners: { ar: "المبتدئون", en: "Beginners" },
-      students: { ar: "الجامعيون والخريجون", en: "Students & grads" },
-      pros: { ar: "المحترفون", en: "Professionals" }
+      foundations: { ar: "Foundations", en: "Foundations" },
+      red: { ar: "Red Team", en: "Red Team" },
+      blue: { ar: "Blue Team", en: "Blue Team" },
+      advanced: { ar: "Advanced", en: "Advanced" },
+      grc: { ar: "GRC", en: "GRC" }
     }
   },
 
   levels: {
-    1: { ar: "مستكشف", en: "Explorer" },
-    2: { ar: "أساسيات", en: "Foundations" },
-    3: { ar: "مهني", en: "Career" },
-    4: { ar: "متخصص", en: "Specialist" },
-    5: { ar: "شهادات", en: "Certification" }
+    1: { ar: "أساسي", en: "Beginner" },
+    2: { ar: "متوسط", en: "Intermediate" },
+    3: { ar: "متقدم", en: "Advanced" },
+    4: { ar: "خبير", en: "Expert" }
   },
 
   tracks: {
-    juniors: { ar: "الناشئون", en: "Juniors" },
     foundations: { ar: "الأساسيات", en: "Foundations" },
-    red: { ar: "الفريق الأحمر", en: "Red Team" },
-    blue: { ar: "الفريق الأزرق", en: "Blue Team" },
-    cloud: { ar: "أمن السحابة", en: "Cloud Security" },
-    cert: { ar: "الشهادات", en: "Certification" }
+    red: { ar: "الهجومي", en: "Red Team" },
+    blue: { ar: "الدفاعي", en: "Blue Team" },
+    advanced: { ar: "المتقدم", en: "Advanced" },
+    grc: { ar: "GRC", en: "GRC" }
   },
 
-  /* Proposed curriculum: 12 courses across 5 levels. Replace with the real list. */
+  /* 24 courses from the client's content PDF. practice: "exercises" counts exercises instead of labs; hours: null hides the hours. */
   courses: [
     {
-      id: "EXP-101", level: 1, audience: "teens", track: "juniors", hours: 30, labs: 10, cert: null,
-      title: { ar: "مستكشفو السايبر", en: "Cyber Explorers" },
+      id: "FND-101", level: 1, track: "foundations", hours: 40, labs: 12, cert: null,
+      title: { ar: "الشبكات للأمن السيبراني", en: "Networking for Security" },
       desc: {
-        ar: "برنامج مكثّف لليافعين: كيف يعمل الإنترنت، كلمات المرور والتحقق الثنائي، كشف رسائل التصيّد، وأول خطواتك في لينكس.",
-        en: "An intensive program for teens: how the internet works, passwords and 2FA, spotting phishing, and your first steps in Linux."
+        ar: "افهم الشبكة كما يراها المهاجم: كيف تنتقل الحزم، وأين تُفتح المنافذ، ولماذا تُستغل الخدمات.",
+        en: "Understand the network the way an attacker sees it: how packets travel, where ports open, and why services get exploited."
       },
-      skills: ["Linux", "Phishing", "2FA", "Networking"]
+      skills: ["Network+", "TCP/IP", "Subnetting", "Wireshark"]
     },
     {
-      id: "CTF-110", level: 1, audience: "teens", track: "juniors", hours: 20, labs: 15, cert: null,
-      title: { ar: "تحديات CTF للناشئين", en: "CTF Juniors" },
+      id: "FND-102", level: 1, track: "foundations", hours: 30, labs: 14, cert: null,
+      title: { ar: "أنظمة التشغيل للأمن", en: "Linux & Windows for Security" },
       desc: {
-        ar: "ألغاز أمنية ممتعة بأسلوب المسابقات في التشفير والويب والتحقيق الرقمي، تتعلّم منها التفكير كمخترق أخلاقي.",
-        en: "Fun, competition-style security puzzles in cryptography, web and digital forensics that teach you to think like an ethical hacker."
+        ar: "سطر الأوامر، والصلاحيات، والخدمات، والسجلات على لينكس وويندوز. القاعدة التي يقف عليها كل مسار.",
+        en: "The command line, permissions, services and logs on Linux and Windows. The foundation every track stands on."
       },
-      skills: ["Cryptography", "Web", "Forensics", "OSINT"]
+      skills: ["Linux CLI", "PowerShell", "Permissions", "Event Logs"]
     },
     {
-      id: "FND-101", level: 2, audience: "beginners", track: "foundations", hours: 40, labs: 16, cert: null,
-      title: { ar: "أساسيات الأمن السيبراني", en: "Cyber Foundations" },
+      id: "FND-103", level: 1, track: "foundations", hours: 24, labs: 10, cert: null,
+      title: { ar: "البرمجة النصية للأمن", en: "Scripting for Security" },
       desc: {
-        ar: "من الصفر: مكوّنات الحاسوب، والشبكات وبروتوكولات TCP/IP، ولينكس وويندوز، ومفاهيم الأمن الأساسية والتهديدات الشائعة.",
-        en: "From zero: computer basics, networking and TCP/IP, Linux and Windows, core security concepts and common threats."
+        ar: "اكتب أدواتك بنفسك: فاحص منافذ، ومحلل سجلات، وأتمتة للمهام المتكررة.",
+        en: "Write your own tools: a port scanner, a log analyzer, and automation for repetitive tasks."
       },
-      skills: ["TCP/IP", "Linux CLI", "Windows", "CIA Triad"]
+      skills: ["Python", "Bash", "Automation", "Regex"]
     },
     {
-      id: "FND-120", level: 2, audience: "beginners", track: "foundations", hours: 36, labs: 14, cert: null,
-      title: { ar: "الشبكات ولينكس للأمن", en: "Networking & Linux for Security" },
+      id: "FND-201", level: 2, track: "foundations", hours: 40, labs: 15, cert: "Security+",
+      title: { ar: "التحضير لشهادة Security+\u200E", en: "Security+ Certification Prep" },
       desc: {
-        ar: "افهم الشبكات كما يراها المهاجم والمدافع: تحليل الحزم، والخدمات، والصلاحيات، وكتابة السكربتات في لينكس.",
-        en: "See networks the way attackers and defenders do: packet analysis, services, permissions and Bash scripting."
+        ar: "المنهج الرسمي كاملاً، مع أسئلة تطبيقية بنمط الامتحان واختبارات تجريبية حتى يوم الامتحان.",
+        en: "The complete official curriculum, with exam-style practice questions and mock exams right up to exam day."
       },
-      skills: ["Wireshark", "Nmap", "Bash", "Permissions"]
+      skills: ["Security+", "Threats", "Architecture", "Operations"]
     },
     {
-      id: "BT-201", level: 3, audience: "students", track: "blue", hours: 60, labs: 24, cert: "CySA+",
-      title: { ar: "محلل مركز العمليات الأمنية", en: "SOC Analyst" },
-      desc: {
-        ar: "راقب واكتشف واستجب: تحليل السجلات، وأنظمة SIEM، والتعامل مع الحوادث، واستخبارات التهديدات.",
-        en: "Monitor, detect and respond: log analysis, SIEM, incident handling and threat intelligence."
-      },
-      skills: ["SIEM", "Splunk", "Incident Response", "MITRE ATT&CK"]
-    },
-    {
-      id: "RT-201", level: 3, audience: "students", track: "red", hours: 60, labs: 26, cert: "eJPT",
-      title: { ar: "مختبِر اختراق مبتدئ", en: "Junior Penetration Tester" },
-      desc: {
-        ar: "منهجية اختبار الاختراق من الاستطلاع حتى التقرير: ثغرات الويب، واستغلال الخدمات، ورفع الصلاحيات.",
-        en: "Pentesting methodology from recon to report: web vulnerabilities, service exploitation and privilege escalation."
-      },
-      skills: ["Nmap", "Burp Suite", "OWASP Top 10", "Reporting"]
-    },
-    {
-      id: "RT-310", level: 4, audience: "pros", track: "red", hours: 48, labs: 22, cert: null,
+      id: "RED-201", level: 2, track: "red", hours: 40, labs: 25, cert: null,
       title: { ar: "اختبار اختراق تطبيقات الويب", en: "Web Application Pentesting" },
       desc: {
-        ar: "تعمّق في هجمات الويب الحديثة: المصادقة والجلسات، والحقن، وواجهات API، وثغرات منطق الأعمال.",
-        en: "Go deep into modern web attacks: authentication and sessions, injection, APIs and business-logic flaws."
+        ar: "اكتشف أخطر ثغرات الويب واستغلها داخل تطبيقات حقيقية، ثم اكتب تقريراً احترافياً كاملاً.",
+        en: "Find and exploit the most critical web vulnerabilities inside real applications, then write a complete professional report."
       },
-      skills: ["Burp Suite", "API Security", "SQLi", "SSRF"]
+      skills: ["OWASP Top 10", "Burp Suite", "SQLi", "XSS"]
     },
     {
-      id: "CL-320", level: 4, audience: "pros", track: "cloud", hours: 40, labs: 18, cert: null,
-      title: { ar: "أمن السحابة", en: "Cloud Security" },
+      id: "RED-202", level: 2, track: "red", hours: 40, labs: 20, cert: null,
+      title: { ar: "اختراق الشبكات والدليل النشط", en: "Network & Active Directory Attacks" },
       desc: {
-        ar: "أمّن البنى السحابية في AWS وAzure: إدارة الهويات والصلاحيات، والإعدادات الخاطئة، والمراقبة والامتثال.",
-        en: "Secure AWS and Azure environments: identity and access management, misconfigurations, monitoring and compliance."
+        ar: "من مستخدم عادي إلى السيطرة على النطاق كاملاً، داخل شبكة شركة حية.",
+        en: "From a regular user to full domain control, inside a live company network."
       },
-      skills: ["AWS", "Azure", "IAM", "CSPM"]
+      skills: ["Active Directory", "Kerberoasting", "BloodHound", "PrivEsc"]
     },
     {
-      id: "DV-330", level: 4, audience: "pros", track: "blue", hours: 32, labs: 12, cert: null,
-      title: { ar: "البرمجة الآمنة للمطورين", en: "Secure Coding for Developers" },
+      id: "RED-203", level: 2, track: "red", hours: 40, labs: "25+", cert: "CEH",
+      title: { ar: "الهاكر الأخلاقي المعتمد", en: "Certified Ethical Hacker" },
       desc: {
-        ar: "للمبرمجين: اكتب كوداً آمناً من البداية، وراجع الكود أمنياً، وابنِ دورة تطوير آمنة لفريقك.",
-        en: "For developers: write secure code from the start, review code for security, and build a secure SDLC for your team."
+        ar: "المنهج الرسمي كاملاً مع مختبرات EC-Council، وتقدّم للامتحان دون شرط السنتين خبرة.",
+        en: "The complete official curriculum with EC-Council labs, and sit the exam without the two-year experience requirement."
       },
-      skills: ["OWASP ASVS", "Code Review", "SAST", "Secure SDLC"]
+      skills: ["CEH v13", "Recon", "Exploitation", "AI Attacks"]
     },
     {
-      id: "BT-340", level: 4, audience: "pros", track: "blue", hours: 40, labs: 16, cert: null,
-      title: { ar: "التحقيق الرقمي والاستجابة للحوادث", en: "Digital Forensics & Incident Response" },
+      id: "RED-301", level: 3, track: "red", hours: 40, labs: 18, cert: "PenTest+",
+      title: { ar: "التحضير لشهادة PenTest+\u200E", en: "PenTest+ Certification Prep" },
       desc: {
-        ar: "حلّل الأدلة الرقمية، وتتبّع المهاجمين، وقُد الاستجابة للحوادث من الاحتواء حتى التعافي.",
-        en: "Analyze digital evidence, trace attackers and lead incident response from containment to recovery."
+        ar: "اختبار الاختراق كعمل مهني: نطاق، وتنفيذ، وتقرير، وتواصل مع العميل.",
+        en: "Penetration testing as professional work: scoping, execution, reporting and client communication."
       },
-      skills: ["DFIR", "Volatility", "Autopsy", "Threat Hunting"]
+      skills: ["PenTest+", "Scoping", "Exploitation", "Reporting"]
     },
     {
-      id: "CR-410", level: 5, audience: "pros", track: "cert", hours: 30, labs: 8, cert: "Security+",
-      title: { ar: "التحضير لشهادة Security+\u200E", en: "CompTIA Security+ Prep" },
+      id: "RED-401", level: 4, track: "red", hours: 40, labs: "20+", cert: "CPENT",
+      title: { ar: "اختبار الاختراق المتقدم", en: "Certified Penetration Testing Professional" },
       desc: {
-        ar: "مراجعة مركّزة لكل محاور الاختبار، مع اختبارات تجريبية وخطة دراسة واضحة حتى يوم الامتحان.",
-        en: "A focused review of every exam domain, with practice tests and a clear study plan up to exam day."
+        ar: "شبكات متعددة الطبقات، والتنقل بينها، وبيئات إنترنت الأشياء والأنظمة الصناعية.",
+        en: "Multi-layered networks, pivoting between them, and IoT and industrial control environments."
       },
-      skills: ["Exam Domains", "Practice Tests", "Study Plan"]
+      skills: ["CPENT", "Pivoting", "IoT", "OT"]
     },
     {
-      id: "CR-450", level: 5, audience: "pros", track: "cert", hours: 80, labs: 30, cert: "OSCP",
-      title: { ar: "معسكر التحضير لـ OSCP", en: "OSCP Prep Bootcamp" },
+      id: "BLU-201", level: 2, track: "blue", hours: 24, labs: 15, cert: "CSA",
+      title: { ar: "محلل مركز العمليات الأمنية", en: "Certified SOC Analyst" },
       desc: {
-        ar: "معسكر مكثّف للمتقدّمين إلى OSCP: آلات تدريب بأسلوب الاختبار، وActive Directory، وكتابة تقارير احترافية.",
-        en: "An intensive bootcamp for OSCP candidates: exam-style practice machines, Active Directory and professional reporting."
+        ar: "اجلس على مقعد المحلل: افرز التنبيهات، وميّز الهجوم الحقيقي من الإنذار الكاذب، وصعّد في الوقت المناسب.",
+        en: "Take the analyst's seat: triage alerts, tell real attacks from false alarms, and escalate at the right moment."
       },
-      skills: ["Active Directory", "PrivEsc", "Pivoting", "Reporting"]
+      skills: ["CSA", "SIEM", "Triage", "Escalation"]
+    },
+    {
+      id: "BLU-202", level: 2, track: "blue", hours: 32, labs: 18, cert: null,
+      title: { ar: "هندسة الكشف", en: "Detection Engineering" },
+      desc: {
+        ar: "ابنِ قواعد كشف تلتقط المهاجم، ولوحات مراقبة تكشف ما يحدث في الشبكة لحظة بلحظة.",
+        en: "Build detection rules that catch attackers, and monitoring dashboards that show what happens on the network moment by moment."
+      },
+      skills: ["Splunk", "Wazuh", "Sigma", "MITRE ATT&CK"]
+    },
+    {
+      id: "BLU-203", level: 2, track: "blue", hours: 40, labs: 12, cert: "CND",
+      title: { ar: "مدافع الشبكات المعتمد", en: "Certified Network Defender" },
+      desc: {
+        ar: "احمِ الشبكة، واكتشف التهديدات، واستجب لها وفق منهجية دفاع متكاملة.",
+        en: "Protect the network, detect threats and respond to them with an integrated defense methodology."
+      },
+      skills: ["CND", "Firewalls", "IDS/IPS", "Network Monitoring"]
+    },
+    {
+      id: "BLU-301", level: 3, track: "blue", hours: 40, labs: 16, cert: "CySA+",
+      title: { ar: "التحضير لشهادة CySA+\u200E", en: "CySA+ Certification Prep" },
+      desc: {
+        ar: "تحليل التهديدات، وإدارة الثغرات، والاستجابة للحوادث بعقلية المحلل المحترف.",
+        en: "Threat analysis, vulnerability management and incident response with a professional analyst's mindset."
+      },
+      skills: ["CySA+", "Threat Analysis", "Vuln Management", "IR"]
+    },
+    {
+      id: "BLU-302", level: 3, track: "blue", hours: 40, labs: 20, cert: "ECIH · CHFI",
+      title: { ar: "معالجة الحوادث والتحليل الجنائي", en: "Incident Handling & Digital Forensics" },
+      desc: {
+        ar: "من أول تنبيه حتى الاحتواء والتقرير الجنائي: ذاكرة، وأقراص، وسجلات، وأدلة.",
+        en: "From the first alert to containment and the forensic report: memory, disks, logs and evidence."
+      },
+      skills: ["ECIH", "CHFI", "Memory Forensics", "DFIR"]
+    },
+    {
+      id: "BLU-401", level: 4, track: "blue", hours: 24, labs: 15, cert: "CTIA",
+      title: { ar: "استخبارات التهديدات", en: "Certified Threat Intelligence Analyst" },
+      desc: {
+        ar: "اعرف عدوك قبل أن يهاجم: اجمع المعلومات عن المهاجمين، وحللها، وحوّلها إلى قرارات دفاعية.",
+        en: "Know your enemy before they strike: gather intelligence on attackers, analyze it, and turn it into defensive decisions."
+      },
+      skills: ["CTIA", "Threat Intel", "IOCs", "OSINT"]
+    },
+    {
+      id: "ADV-301", level: 3, track: "advanced", hours: 32, labs: 15, cert: null,
+      title: { ar: "عمليات الفريق البنفسجي", en: "Purple Team Operations" },
+      desc: {
+        ar: "نفّذ الهجوم، وراقب الدفاع، وقِس الفجوة: ما الذي رُصد، وما الذي فات، وكيف تسدّه.",
+        en: "Run the attack, watch the defense, and measure the gap: what was detected, what was missed, and how to close it."
+      },
+      skills: ["Atomic Red Team", "MITRE ATT&CK", "Detection Coverage", "Emulation"]
+    },
+    {
+      id: "ADV-302", level: 3, track: "advanced", hours: 40, labs: 11, cert: "CCSE",
+      title: { ar: "أمن السحابة", en: "Certified Cloud Security Engineer" },
+      desc: {
+        ar: "أمّن البيئات السحابية من الهويات والصلاحيات حتى المراقبة والاستجابة.",
+        en: "Secure cloud environments, from identities and permissions to monitoring and response."
+      },
+      skills: ["CCSE", "AWS", "Azure", "IAM"]
+    },
+    {
+      id: "ADV-303", level: 3, track: "advanced", hours: 24, labs: 16, cert: "CASE",
+      title: { ar: "أمن التطبيقات", en: "Certified Application Security Engineer" },
+      desc: {
+        ar: "راجع الكود، واكتشف ثغراته قبل المهاجم، وادمج الأمن في كل مرحلة من دورة التطوير.",
+        en: "Review code, find its vulnerabilities before attackers do, and build security into every stage of the development lifecycle."
+      },
+      skills: ["CASE", "Secure Coding", "Code Review", "DevSecOps"]
+    },
+    {
+      id: "ADV-401", level: 4, track: "advanced", hours: 40, labs: 12, cert: "SecurityX",
+      title: { ar: "المعمارية الأمنية للمؤسسات", en: "SecurityX Certification Prep" },
+      desc: {
+        ar: "صمّم حلولاً أمنية متكاملة على مستوى المؤسسة، وقيّمها، ودافع عنها أمام الإدارة.",
+        en: "Design integrated enterprise-level security solutions, assess them, and defend them in front of management."
+      },
+      skills: ["SecurityX", "Architecture", "Zero Trust", "Risk"]
+    },
+    {
+      id: "GRC-101", level: 1, track: "grc", hours: 24, labs: 8, practice: "exercises", cert: null,
+      title: { ar: "أساسيات الحوكمة وإدارة المخاطر", en: "GRC Fundamentals" },
+      desc: {
+        ar: "كيف تُدار المخاطر الأمنية داخل المؤسسة، ومن يملك القرار، ولماذا تفشل البرامج الأمنية.",
+        en: "How security risk is managed inside an organization, who owns the decisions, and why security programs fail."
+      },
+      skills: ["Governance", "Risk Assessment", "Policies", "Controls"]
+    },
+    {
+      id: "GRC-201", level: 2, track: "grc", hours: 32, labs: 10, practice: "exercises", cert: null,
+      title: { ar: "بناء نظام إدارة أمن المعلومات", en: "ISO 27001 Implementation" },
+      desc: {
+        ar: "من تحديد النطاق حتى الجاهزية لتدقيق الاعتماد، على مؤسسة افتراضية متكاملة.",
+        en: "From defining the scope to certification-audit readiness, on a complete simulated organization."
+      },
+      skills: ["ISO 27001", "ISMS", "Statement of Applicability", "Risk Register"]
+    },
+    {
+      id: "GRC-202", level: 2, track: "grc", hours: 24, labs: 8, practice: "exercises", cert: null,
+      title: { ar: "التدقيق والامتثال", en: "Audit & Compliance" },
+      desc: {
+        ar: "قيّم الفجوات، وجهّز الأدلة، وأغلق ملاحظات التدقيق قبل أن تتحول إلى مخالفات.",
+        en: "Assess gaps, prepare evidence, and close audit findings before they turn into violations."
+      },
+      skills: ["NIST CSF", "PCI DSS", "Gap Analysis", "Audit Evidence"]
+    },
+    {
+      id: "GRC-301", level: 3, track: "grc", hours: null, labs: 12, practice: "exercises", cert: "EISM",
+      title: { ar: "مدير أمن المعلومات", en: "EC-Council Information Security Manager" },
+      desc: {
+        ar: "أدر البرنامج الأمني كاملاً: الفرق، والميزانيات، والسياسات، والتقارير للإدارة العليا.",
+        en: "Run the entire security program: teams, budgets, policies and reporting to senior management."
+      },
+      skills: ["EISM", "Security Program", "Budgeting", "Leadership"]
+    },
+    {
+      id: "GRC-401", level: 4, track: "grc", hours: 40, labs: 7, practice: "exercises", cert: "CCISO",
+      title: { ar: "القيادة الأمنية التنفيذية", en: "Certified Chief Information Security Officer" },
+      desc: {
+        ar: "الاستراتيجية الأمنية بلغة مجلس الإدارة. للقيادات الأمنية ذوي الخبرة.",
+        en: "Security strategy in the language of the board. For experienced security leaders."
+      },
+      skills: ["CCISO", "Strategy", "Board Reporting", "Governance"]
     }
   ]
 };

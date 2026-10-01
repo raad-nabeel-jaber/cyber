@@ -25,7 +25,7 @@
     }
   };
 
-  const state = { lang: "ar", filter: "all" };
+  const state = { lang: "ar", filter: C.categories.order[0] };
 
   /* ---------- i18n ---------- */
 
@@ -155,28 +155,29 @@
   const grid = $("[data-course-grid]");
 
   function counts() {
-    const out = { all: C.courses.length };
-    C.audiences.order.forEach((a) => { out[a] = C.courses.filter((c) => c.audience === a).length; });
+    const out = {};
+    C.categories.order.forEach((k) => { out[k] = C.courses.filter((c) => c.track === k).length; });
     return out;
   }
 
   function renderTabs() {
     if (!tabsEl) return;
     const n = counts();
-    const keys = ["all"].concat(C.audiences.order);
-    tabsEl.innerHTML = keys.map((k) => {
-      const label = k === "all" ? t("courses.all") : pick(C.audiences.labels[k]);
+    tabsEl.innerHTML = C.categories.order.map((k) => {
+      const label = pick(C.categories.labels[k]);
       const selected = state.filter === k;
       return `<button class="tab" type="button" role="tab" id="tab-${k}" aria-controls="course-panel" aria-selected="${selected}" tabindex="${selected ? 0 : -1}" data-filter="${k}">${esc(label)} <span class="tab__count">${n[k]}</span></button>`;
     }).join("");
     grid.setAttribute("aria-labelledby", `tab-${state.filter}`);
   }
 
-  const TRACK_MARKS = { juniors: "t-juniors", foundations: "t-foundations", red: "t-red", blue: "t-blue", cloud: "t-cloud", cert: "i-award" };
+  const TRACK_MARKS = { foundations: "t-foundations", red: "t-red", blue: "t-blue", advanced: "i-award", grc: "i-briefcase" };
 
   function courseCard(c, i) {
     const english = state.lang === "ar" ? `<p class="course__en" lang="en" dir="ltr">${esc(c.title.en)}</p>` : "";
-    const cert = c.cert ? `<div><dt>${esc(t("courses.prepares"))}</dt><dd dir="ltr" data-proposal>${esc(c.cert)}</dd></div>` : "";
+    const cert = c.cert ? `<div><dt>${esc(t("courses.prepares"))}</dt><dd dir="ltr">${esc(c.cert)}</dd></div>` : "";
+    const hours = c.hours != null ? `<div><dt>${esc(t("courses.hours"))}</dt><dd>${esc(c.hours)}</dd></div>` : "";
+    const practice = c.practice === "exercises" ? "courses.exercises" : "courses.labs";
     return `<article class="course" data-track="${c.track}" style="--i:${i}">
       <svg class="course__art" aria-hidden="true"><use href="#${TRACK_MARKS[c.track] || "t-foundations"}"/></svg>
       <div class="course__body">
@@ -188,8 +189,8 @@
       </div>
       <dl class="course__meta">
         <div><dt>${esc(t("courses.levelLabel"))}</dt><dd>${c.level} · ${esc(pick(C.levels[c.level]))}</dd></div>
-        <div><dt>${esc(t("courses.hours"))}</dt><dd data-proposal>${c.hours}</dd></div>
-        <div><dt>${esc(t("courses.labs"))}</dt><dd data-proposal>${c.labs}</dd></div>
+        ${hours}
+        <div><dt>${esc(t(practice))}</dt><dd>${esc(c.labs)}</dd></div>
         ${cert}
       </dl>
       <button class="course__cta" type="button" data-course="${c.id}">
@@ -200,7 +201,7 @@
 
   function renderCourses(animate) {
     if (!grid) return;
-    const list = C.courses.filter((c) => state.filter === "all" || c.audience === state.filter);
+    const list = C.courses.filter((c) => c.track === state.filter);
     grid.innerHTML = list.length
       ? list.map(courseCard).join("")
       : `<p class="course-empty">${esc(t("courses.empty"))}</p>`;
@@ -227,7 +228,7 @@
     });
 
     tabsEl.addEventListener("keydown", (e) => {
-      const keys = ["all"].concat(C.audiences.order);
+      const keys = C.categories.order;
       const i = keys.indexOf(state.filter);
       const rtl = root.dir === "rtl";
       let next = null;
@@ -251,9 +252,7 @@
   $$("[data-door]").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      const audience = link.dataset.door;
-      setFilter(audience, false);
-      setAudience(audience);
+      setFilter(link.dataset.door, false);
       goTo("#courses");
     });
   });
@@ -351,7 +350,7 @@
     if (!courseSelect) return;
     const current = courseSelect.value;
     let html = `<option value="">${esc(t("form.courseHelp"))}</option>`;
-    [1, 2, 3, 4, 5].forEach((lv) => {
+    Object.keys(C.levels).map(Number).forEach((lv) => {
       const group = C.courses.filter((c) => c.level === lv);
       if (!group.length) return;
       const label = `${t("courses.level", { n: lv })} · ${pick(C.levels[lv])}`;
@@ -361,18 +360,10 @@
     courseSelect.value = current;
   }
 
-  function setAudience(value) {
-    const radio = form.querySelector(`input[name="audience"][value="${value}"]`);
-    if (radio) radio.checked = true;
-    syncGuardian();
-    if (errors.audience) validate("audience");
-  }
-
   function chooseCourse(id) {
     const course = C.courses.find((c) => c.id === id);
     if (!course) return;
     courseSelect.value = id;
-    setAudience(course.audience);
     goTo("#register", "#f-name");
   }
 

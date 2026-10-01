@@ -46,7 +46,8 @@ Derived: one hands-on ladder that runs from a teen's first challenge to a profes
 - Bilingual page: Arabic is primary (RTL) and an English toggle is required. Technical terms (Pentesting, SOC, CTF…) stay in English inside Arabic copy.
 - The primary action is a registration form on the page. Its submit target is not decided yet, so the form has to be easy to wire to a backend.
 - **Undecided:** delivery format (in-person, online or hybrid) and city/location. The user said "later". Do not claim a format or a location.
-- **Undecided:** the real course list, prices, schedules, durations and certification mapping.
+- The course list (24 courses in five categories: Foundations, Red Team, Blue Team, Advanced, GRC), hours, lab and exercise counts, and certification names come from the client's content PDF (2026-10-01). GRC-301 hours are missing there. **Undecided:** prices and schedules.
+- 2026-10-01: the user asked to swap in the client's data only, without changing the design. The audience doors now hold the four tracks (Red, Blue, Purple, GRC), and the course tabs filter by the five categories, opening on Foundations.
 
 ## Brand Commitments
 
@@ -54,12 +55,13 @@ Derived: one hands-on ladder that runs from a teen's first challenge to a profes
 - Brand red: `#EF4050`, sampled from the official SVG.
 - Logo assets: `~/Downloads/AppLogo.svg` is the light-ground version, with "trainers" and the tagline tail in black. The user-supplied PNG is the dark-ground version, with "trainers" in white.
 - The user made the logo binding. Asked what would make the design feel wrong, they pointed to the logo: the page must be faithful to this brand.
+- **Logo swap (2026-10-01):** the user replaced the apptrainers logo with the Vision 3020 logo (`assets/vision-3020-white.svg`, white lettering, red artwork, transparent; same file as the cyber2 project) in the header, footer and favicon. They asked for the logo only, so apptrainers text elsewhere on the page is unchanged for now.
 - **Standing visual preference (2026-09-24):** the user was shown two rounds of distinctive directions (a lock cutaway, a CTF board, a fight card, security printing, keycaps). They chose the category standard: a dark cyber-academy landing page. Convention is the commitment. The craft bar is **Hack The Box Academy**, executed at full fidelity in apptrainers' own brand (coral red replaces HTB's green), with no irony and no smuggled quirk.
 
 ## Evidence on Hand
 
 - Logo in SVG and PNG form.
-- No real course list, prices, graduate numbers, partners, accreditations or testimonials exist yet. At the user's request, all course content is authored as a realistic proposal, and every number, claim and name is marked for replacement. Never present invented statistics, partners, employers, accreditations or testimonials as real.
+- The client's content PDF (2026-10-01) supplies the hero copy, the four tracks and the 24 courses. No prices, graduate numbers, partners, accreditations or testimonials exist yet; remaining proposals stay marked for replacement. Never present invented statistics, partners, employers, accreditations or testimonials as real.
 
 ## Product Principles
 

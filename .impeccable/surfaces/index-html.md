@@ -11,9 +11,9 @@ Scope: single landing page, visitor mode **Persuade**. Audience: teens and schoo
 
 Constraints: Arabic-first RTL with a full English toggle. Static HTML/CSS/JS. Delivery format, city, prices and dates are undecided, so none are claimed. The form asks the visitor for a format preference.
 
-Memorable moment: a live lab terminal in the hero runs a recon-to-flag sequence. Clicking an audience door or course card preselects it in the form. Draft mode (html[data-draft]) puts a dotted amber underline on every proposal value.
+Memorable moment: a live lab terminal in the hero runs a recon-to-flag sequence. A track door opens its course tab; a course card's CTA preselects that course in the form. Draft mode (html[data-draft]) puts a dotted amber underline on every proposal value.
 
-Unresolved: real courses, hours, cert mapping, testimonials, form endpoint, contact details.
+Content (2026-10-01): hero copy, four tracks and 24 courses come from the client's PDF; the user asked for data only, no design change. Unresolved: GRC-301 hours, teen programs (FAQ q2, announcement bar), testimonials, form endpoint, contact details.
 
 ## Direction contract
 

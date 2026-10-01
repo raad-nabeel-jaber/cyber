@@ -345,7 +345,7 @@ html[lang="en"] .section__head h2 { line-height: 1.08; letter-spacing: -0.03em; 
 }
 
 .brand { flex: none; border-radius: 8px; }
-.brand img { height: 36px; width: auto; }
+.brand img { height: 56px; width: auto; }
 
 .nav { margin-inline: auto; }
 
@@ -502,7 +502,7 @@ html[lang="en"] .hero__title {
   color: var(--text-3);
 }
 
-.hero__facts li { display: inline-flex; align-items: center; gap: 10px; white-space: nowrap; }
+.hero__facts li { display: inline-flex; align-items: center; gap: 10px; }
 
 .hero__facts li::before {
   content: "";
@@ -747,7 +747,7 @@ html[lang="en"] .door__text { line-height: 1.6; }
 }
 
 .door__meta div { display: flex; gap: 10px; }
-.door__meta dt { min-width: 3.6em; color: var(--text-3); }
+.door__meta dt { flex: none; min-width: 3.6em; color: var(--text-3); }
 .door__meta dd { margin: 0; color: var(--text); font-weight: 500; }
 
 .door__cta {
@@ -878,12 +878,11 @@ html[lang="en"] .door__text { line-height: 1.6; }
   transform: translateY(-3px);
 }
 
-.course[data-track="juniors"] { --track: var(--amber); }
 .course[data-track="foundations"] { --track: var(--steel); }
 .course[data-track="red"] { --track: var(--brand); }
 .course[data-track="blue"] { --track: var(--blue); }
-.course[data-track="cloud"] { --track: var(--violet); }
-.course[data-track="cert"] { --track: var(--green); }
+.course[data-track="advanced"] { --track: var(--violet); }
+.course[data-track="grc"] { --track: var(--green); }
 
 .course__track {
   display: inline-flex;
@@ -1645,7 +1644,7 @@ html[lang="en"] .register__copy h2 { line-height: 1.08; letter-spacing: -0.03em;
   gap: 32px 48px;
 }
 
-.footer__brand img { width: auto; height: 40px; }
+.footer__brand img { width: auto; height: 56px; }
 .footer__tagline { margin-top: 18px; color: var(--text-2); font-size: .9375rem; line-height: 1.6; }
 .footer__tagline-en { margin-top: 4px; color: var(--text-3); font: 400 .8125rem/1.5 var(--font-latin); text-align: end; }
 html[lang="en"] .footer__tagline-en { display: none; }
@@ -1781,7 +1780,7 @@ html[data-draft] [data-proposal] {
   :root { --header-h: 64px; }
 
   .header__cta { display: none; }
-  .brand img { height: 32px; }
+  .brand img { height: 48px; }
 
   .stairs { grid-template-columns: minmax(0, 1fr); }
   .course-grid { grid-template-columns: minmax(0, 1fr); }
